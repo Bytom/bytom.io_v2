@@ -12,7 +12,7 @@ export default {
     },
     {
       name: 'Bystack',
-      href: 'https://www.bystack.io/',
+      href: 'https://www.bystack.com/',
     },
     {
       name: 'Ecosystem',
