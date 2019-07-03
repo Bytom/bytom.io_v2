@@ -23,7 +23,7 @@ export default {
       version: 'V 1.0.9',
       links: [
         null,
-        {title: 'Download', href: 'https://github.com/Bytom/bytom/releases/download/v1.0.9/bytom-wallet-desktop-1.0.9-mac.zip'}
+        {title: 'Download', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71014/bytom-wallet-desktop-1.0.9-mac.zip'}
       ]
     },
     {
@@ -32,8 +32,8 @@ export default {
       des: 'for Wins',
       version: 'V 1.0.9',
       links: [
-        {title: 'Win32', href: 'https://github.com/Bytom/bytom/releases/download/v1.0.9/bytom-wallet-desktop-1.0.9-win-ia32.zip'},
-        {title: 'Win64', href: 'https://github.com/Bytom/bytom/releases/download/v1.0.9/bytom-wallet-desktop-1.0.9-win-x64.zip'},
+        {title: 'Win32', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71014/bytom-wallet-desktop-1.0.9-win-ia32.zip'},
+        {title: 'Win64', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71014/bytom-wallet-desktop-1.0.9-win-x64.zip'},
       ]
     },
     {
@@ -42,8 +42,8 @@ export default {
       des: 'for Linux',
       version: 'V 1.0.9',
       links: [
-        {title: 'Linux32', href: 'https://github.com/Bytom/bytom/releases/download/v1.0.9/bytom-wallet-desktop-1.0.9-linux-ia32.zip'},
-        {title: 'Linux64', href: 'https://github.com/Bytom/bytom/releases/download/v1.0.9/bytom-wallet-desktop-1.0.9-linux-x64.zip'},
+        {title: 'Linux32', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71014/bytom-wallet-desktop-1.0.9-linux-ia32.zip'},
+        {title: 'Linux64', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71014/bytom-wallet-desktop-1.0.9-linux-x64.zip'},
       ]
     },
     {
@@ -133,7 +133,7 @@ export default {
     title: ['File', 'Height', 'Size', 'Checksums(MD5)', 'Last update', 'Link'],
     width: [280, 110, 150, 350, 260],
     data: [
-      ['190422-Update.db.zip', '219831', '411.8 MB', 'E244A89E6F381F2647CE0CB59D8D40CD', '2019-04-22 16:00:00 (GMT+8)', <a target="_blank" href="https://nchc.dl.sourceforge.net/project/bytomblockchain/core.db/190422-Update.db.zip">Download</a>],
+      ['190703-Update.db.zip', '260875', '454.4MB', '94BD7376BB1E34EF166120D421C9F589', '2019-07-03 10:00:00 (GMT+8)', <a target="_blank" href="https://sourceforge.net/projects/bytomblockchain/files/core.db/190703-Update.db.zip">Download</a>],
     ],
   },
 };
