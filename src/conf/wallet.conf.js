@@ -78,7 +78,7 @@ export default {
     },
     {
       img: img_bixin,
-      title: 'Binxin Wallet',
+      title: 'Bixin Wallet',
       link: 'https://bixin.com',
       des: 'Blockchain in your pocket'
     },
