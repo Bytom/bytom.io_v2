@@ -48,6 +48,9 @@ export default function Card({ img, title, des, style, link, exrta, loading=fals
   if(loading) {
     return <CardLoading />;
   }
+  if(!title) {
+    return <div style={{width: 392}}></div>
+  }
   const Cont = () => (
     <>
       <img src={img} alt=""/>
@@ -60,7 +63,7 @@ export default function Card({ img, title, des, style, link, exrta, loading=fals
     <Wrap style={style}>
       {
         link ?
-            /^http/.test(link) ? <a href={link}><Cont /></a>
+            /^http/.test(link) ? <a target="_blank" href={link}><Cont /></a>
           : <Link to={link}><Cont /></Link>
         : <Cont />
       }

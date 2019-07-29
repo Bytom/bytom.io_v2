@@ -32,6 +32,11 @@ export default {
           link: 'https://chrome.google.com/webstore/detail/bystore/nlgbhdfgdhgbiamfdfmbikcdghidoadd',
         },
         {
+          img: require('../images/eco/1-cobo.png'),
+          title: 'Cobo',
+          link: 'https://cobo.com/',
+        },
+        {
           img: require('../images/eco/1-Hoo.png'),
           title: 'Hoo',
           link: 'https://hoo.com/',

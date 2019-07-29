@@ -7,6 +7,7 @@ import img_bepal from '../images/wallet/mobile/wallet-bepal@2x.png';
 import img_hoo from '../images/wallet/mobile/wallet-hoo@2x.png';
 import img_hyperpay from '../images/wallet/mobile/wallet-hyperpay@2x.png';
 import img_bitpie from '../images/wallet/mobile/wallet-bitpie@2x.png';
+import img_cobo from '../images/wallet/mobile/wallet-cobo@2x.png';
 
 import img_icon_linux from '../images/linux.png';
 
@@ -89,6 +90,12 @@ export default {
       des: 'Professional digital assets management platform'
     },
     {
+      img: img_cobo,
+      title: 'Cobo',
+      link: 'https://cobo.com/',
+      des: 'Grow and protect crypto assets for everyone'
+    },
+    {
       img: img_hoo,
       title: 'Hoo Wallet',
       link: 'https://hoo.com',
@@ -100,6 +107,7 @@ export default {
       link: 'https://hyperpay.me/download',
       des: 'The bastion of wallet security, watch your assets…'
     },
+    {}
   ],
   browserWalletList: [
     {
