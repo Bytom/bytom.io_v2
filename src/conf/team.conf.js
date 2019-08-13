@@ -230,15 +230,6 @@ export default {
         ],
       },
       {
-        name: 'Zhang Xi',
-        position: 'Oversea Operation Manager',
-        img: img_zhangx,
-        contact: [
-          {type: 'linkin', link: 'https://www.linkedin.com/in/xi-zhang-36931a171/'},
-          {type: 'email', link: 'zhangx@bytom.io'},
-        ],
-      },
-      {
         name: 'Wen Jiacheng',
         position: 'Oversea Operation Manager',
         img: img_wenjc,
