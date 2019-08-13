@@ -31,7 +31,7 @@ const links = [
       {title: 'Team', href: '/team',},
       {title: 'Ecosystem', href: '/ecosystem'},
       {title: 'White Paper', href: 'https://bytom.io/Bytom-Technical-White-Paper-EN.pdf'},
-      {title: 'Bytom Logo', href: 'http://bytom.oss-cn-hongkong.aliyuncs.com/res/Logo_Bytom_v2.1.zip'},
+      {title: 'Bytom Logo', href: 'https://cdn.bytom.io/res/Logo_Bytom_v2.1.zip'},
     ]
   },
   {
