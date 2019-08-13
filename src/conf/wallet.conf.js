@@ -141,7 +141,7 @@ export default {
     title: ['File', 'Height', 'Size', 'Checksums(MD5)', 'Last update', 'Link'],
     width: [280, 110, 150, 350, 260],
     data: [
-      ['190813-Update.db.zip', '285597', '454.4MB', 'C34D05F35494DA6C58F53B319538D378', '2019-08-13 15:50:00 (GMT+8)', <a target="_blank" href="https://sourceforge.net/projects/bytomblockchain/files/core.db/190813-Update.db.zip">Download</a>],
+      ['190813-Update.db.zip', '285597', '542.7MB', 'C34D05F35494DA6C58F53B319538D378', '2019-08-13 15:50:00 (GMT+8)', <a target="_blank" href="https://sourceforge.net/projects/bytomblockchain/files/core.db/190813-Update.db.zip">Download</a>],
     ],
   },
 };
