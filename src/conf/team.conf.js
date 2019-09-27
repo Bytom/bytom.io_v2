@@ -45,12 +45,12 @@ export default {
         ],
       },
       {
-        name: 'Duan Xinxing',
-        position: 'Founder and CEO of Bytom',
-        img: img_duanxx,
+        name: 'Lang Yu',
+        position: 'CEO of Bytom',
+        img: img_langy,
         contact: [
-          {type: 'linkedin', link: 'https://www.linkedin.com/in/duan-xinxing-a6482a11/'},
-          {type: 'email', link: 'duan@bytom.io'},
+          {type: 'linkedin', link: 'https://www.linkedin.com/in/lang-yu-b15604142'},
+          {type: 'email', link: 'langyu@bytom.io'},
         ],
       },
       {},
@@ -58,12 +58,12 @@ export default {
     ],
     [
       {
-        name: 'Lang Yu',
+        name: 'Zhu Yiqi',
         position: 'CTO of Bytom',
-        img: img_langy,
+        img: img_zhuyq,
         contact: [
-          {type: 'linkedin', link: 'https://www.linkedin.com/in/lang-yu-b15604142'},
-          {type: 'email', link: 'langyu@bytom.io'},
+          {type: 'linkedin', link: 'https://www.linkedin.com/in/yiqi-zhu-56608963/'},
+          // {type: 'email', link: 'james@bytom.io'},
         ],
       },
       {
@@ -73,15 +73,6 @@ export default {
         contact: [
           {type: 'linkedin', link: 'https://www.linkedin.com/in/jinlei/'},
           {type: 'email', link: 'jinl@8btc.com'},
-        ],
-      },
-      {
-        name: 'Zhu Yiqi',
-        position: 'VP Engineering',
-        img: img_zhuyq,
-        contact: [
-          {type: 'linkedin', link: 'https://www.linkedin.com/in/yiqi-zhu-56608963/'},
-          // {type: 'email', link: 'james@bytom.io'},
         ],
       },
       {
@@ -156,6 +147,7 @@ export default {
           // {type: 'email', link: ''},
         ],
       },
+      {},
       {}
     ],
     [
@@ -204,6 +196,15 @@ export default {
         ],
       },
       {
+        name: 'Yi Ren',
+        position: 'Head of Bytom US',
+        img: img_reny,
+        contact: [
+          {type: 'linkin', link: 'https://www.linkedin.com/in/yi-ren-098303149/'},
+          {type: 'email', link: 'reny@bytom.io'},
+        ],
+      },
+      {
         name: 'Huang Xinglong',
         position: 'Tech Operation Manager',
         img: img_huangxl,
@@ -221,15 +222,6 @@ export default {
         ],
       },
       {
-        name: 'Peng Zhuowen',
-        position: 'Oversea Operation Manager',
-        img: img_pnegzw,
-        contact: [
-          {type: 'linkin', link: 'https://www.linkedin.com/in/zhuowenpeng/'},
-          {type: 'email', link: 'zoepeng@bytom.io'},
-        ],
-      },
-      {
         name: 'Wen Jiacheng',
         position: 'Oversea Operation Manager',
         img: img_wenjc,
@@ -239,39 +231,12 @@ export default {
         ],
       },
       {
-        name: 'Liu Yuruo',
-        position: 'PR Manager',
-        img: img_liuyr,
-        contact: [
-          {type: 'linkin', link: 'https://www.linkedin.com/in/%E9%9B%A8%E8%8B%A5-%E5%88%98-494a64111/'},
-          {type: 'email', link: 'liuyr@bytom.io'},
-        ],
-      },
-      {
-        name: 'Yi Ren',
-        position: 'Oversea PR Manager',
-        img: img_reny,
-        contact: [
-          {type: 'linkin', link: 'https://www.linkedin.com/in/yi-ren-098303149/'},
-          {type: 'email', link: 'reny@bytom.io'},
-        ],
-      },
-      {
         name: 'Fan Mengxing',
         position: 'Activity Operation Manager',
         img: img_fanmx,
         contact: [
           {type: 'linkin', link: 'https://www.linkedin.com/in/%E9%86%92-%E6%A2%A6-392635175/'},
           {type: 'email', link: 'fanmx@bytom.io'},
-        ],
-      },
-      {
-        name: 'Xu Nan',
-        position: 'New Media Manager',
-        img: img_xun,
-        contact: [
-          {type: 'linkin', link: 'https://www.linkedin.com/in/%E6%A5%A0-%E8%AE%B8-093122162/'},
-          {type: 'email', link: 'xn2018@bytom.io'},
         ],
       },
       {},
