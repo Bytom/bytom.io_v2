@@ -86,7 +86,7 @@ export default {
     {
       img: img_bycoin,
       title: 'Bycoin Wallet',
-      link: 'https://bycoin.im',
+      link: 'https://wwww.bystack.com/wallet',
       des: 'Professional digital assets management platform'
     },
     {

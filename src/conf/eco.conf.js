@@ -24,7 +24,7 @@ export default {
         {
           img: require('../images/eco/1-bycoin.png'),
           title: 'Bycoin',
-          link: 'https://bycoin.im',
+          link: 'https://wwww.bystack.com/wallet',
         },
         {
           img: require('../images/eco/1-byone.png'),
