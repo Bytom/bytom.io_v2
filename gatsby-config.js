@@ -45,15 +45,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: './src/images/favicon.png',
-        icons: {
-          favicons: true,
-        }
-      }
-    },
-    {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
         endpoint: 'https://gmail.us20.list-manage.com/subscribe/post?u=bbafc8ca5070bf12853c712d4&amp;id=e8aa0dac65'
@@ -65,7 +56,16 @@ module.exports = {
         login: 'rainoy',
         repo: 'blog',
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        path: `${__dirname}/src/conf/i18n`,
+        languages: [`en`, `zh`],
+        defaultLanguage: `zh`,
+        redirect: false,
+      }, // import { injectIntl, Link, FormattedMessage as Msg } from "gatsby-plugin-intl"
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
