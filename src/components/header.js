@@ -67,6 +67,7 @@ const Toolbar = css.div`
   line-height: 80px;
   @media (max-width: 640px) {
     line-height: 60px;
+    width: 100px;
   }
 `;
 const Github = css.a`
@@ -116,6 +117,11 @@ const MobileNavItem = css.li`
     display: none;
   }
 `;
+const SubNavItem = css(MobileNavItem)`
+  @media (min-width: 640px) {
+    display: block;
+  }
+`;
 const MobileMenuToggle = css.span`
   display: inline-block;
   width: 23px;
@@ -149,6 +155,7 @@ const DevCon = css.div`
 const Header = ({ siteTitle, light }) => {
 
   const [menuStatus, toggleMobileMenu] = useState(false);
+  const [langStatus, toggleLangStatus] = useState(false);
 
   return (
     <Wrap light={light ? 'true' : 'false'}>
@@ -186,9 +193,17 @@ const Header = ({ siteTitle, light }) => {
             <a target="_blank" href="https://devcon.bytom.io">DevCon2</a>
           </MobileNavItem>
         </MobileNav>
+        <MobileNav style={{top: 80}} light={light ? 'true' : 'false'} active={langStatus}>
+          <SubNavItem light={light ? 'true' : 'false'} key={'12'}>
+            <Link to="/en">English</Link>
+          </SubNavItem>
+          <SubNavItem light={light ? 'true' : 'false'} key={'13'}>
+            <Link to="/zh">简体中文</Link>
+          </SubNavItem>
+        </MobileNav>
         <Toolbar>
           <Github light={light ? 'true' : 'false'} target="_blank" href="https://github.com/Bytom/bytom" className="iconfont github" />
-          {/* <Lang className="iconfont lang" /> */}
+          <Lang light={light ? 'true' : 'false'} onClick={() => toggleLangStatus(!langStatus)} className="iconfont lang" />
           <MobileMenuToggle light={light ? 'true' : 'false'} onClick={() => toggleMobileMenu(!menuStatus)} />
         </Toolbar>
         <DevCon><a target="_blank" href="https://devcon.bytom.io">DevCon2</a></DevCon>
