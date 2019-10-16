@@ -167,7 +167,7 @@ const Header = ({ siteTitle, light }) => {
   return (
     <Wrap light={light ? 'true' : 'false'}>
       <Cont className="clearfix">
-        <Logo light={light ? 'true' : 'false'} to="/" />
+        <Logo light={light ? 'true' : 'false'} to="/">{' '}</Logo>
         <Nav>
           {
             _conf.nav.map((item, index) => (

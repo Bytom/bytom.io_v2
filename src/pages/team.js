@@ -158,7 +158,7 @@ export default function Team() {
         <Cont style={{position: 'relative'}}>
           <Head>
             <Msg tagName="h1" id="team_title" values={{b: <Msg id="team_title_2" />}} />
-            <Msg id="team_des" tagName="p" />
+            <Msg id="team_des" values={{ br: <br /> }} tagName="p" />
           </Head>
         </Cont>
       </Banner>
