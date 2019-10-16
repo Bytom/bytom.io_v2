@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import _conf from '../../conf/eco.conf';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 
 const Wrap = styled.div`
   width: 100%;
@@ -112,29 +113,29 @@ const IconList = styled.ul`
 const navList = [
   {
     id: 'wallets',
-    name: 'Wallets',
+    name: <Msg id="eco_nav_wallet" />,
     index: 0
   },
   {
     id: 'explorers',
-    name: 'Explorers',
+    name: <Msg id="eco_nav_exp" />,
     index: 1
   }, {
     id: 'mining',
-    name: 'Mining Pools',
+    name: <Msg id="eco_nav_pool" />,
     index: 2
   }, {
     id: 'exchanges',
-    name: 'Exchanges',
+    name: <Msg id="eco_nav_exchange" />,
     index: 3
   }, {
     id: 'safety',
-    name: 'Safety',
+    name: <Msg id="eco_nav_safety" />,
     index: 4
   },
   {
     id: 'partners',
-    name: 'Partners',
+    name: <Msg id="eco_nav_partners" />,
     index: 5
   },
 ];

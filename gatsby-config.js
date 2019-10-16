@@ -62,7 +62,7 @@ module.exports = {
       options: {
         path: `${__dirname}/src/conf/i18n`,
         languages: [`en`, `zh`],
-        defaultLanguage: `zh`,
+        defaultLanguage: `en`,
         redirect: false,
       }, // import { injectIntl, Link, FormattedMessage as Msg } from "gatsby-plugin-intl"
     },

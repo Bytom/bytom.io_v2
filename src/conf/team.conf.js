@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 import img_changj from '../images/team/01-01-changjia@2x.png';
 import img_duanxx from '../images/team/01-02-duanxinxing@2x.png';
 import img_langy from '../images/team/01-03-langyu@2x.png';
@@ -30,23 +32,23 @@ import img_xun from '../images/team/03-12-xunan@2x.png';
 
 export default {
   title: [
-    'Founders & Top managers',
-    'Development Department',
-    'Marketing Department'
+    <Msg id="team_subtitle_1" />,
+    <Msg id="team_subtitle_2" />,
+    <Msg id="team_subtitle_3" />,
   ],
   data: [
     [
       {
-        name: 'Chang Jia',
-        position: 'Founder of Bytom',
+        name: <Msg id="team_member_cj" />,
+        position: <Msg id="team_member_cj_title" />,
         img: img_changj,
         contact: [
           {type: 'linkedin', link: 'https://www.linkedin.com/in/%E5%BF%97%E9%B9%8F-%E5%88%98-750b8395/'},
         ],
       },
       {
-        name: 'Lang Yu',
-        position: 'CEO of Bytom',
+        name: <Msg id="team_member_ly" />,
+        position: <Msg id="team_member_ly_title" />,
         img: img_langy,
         contact: [
           {type: 'linkedin', link: 'https://www.linkedin.com/in/lang-yu-b15604142'},
@@ -58,8 +60,8 @@ export default {
     ],
     [
       {
-        name: 'Zhu Yiqi',
-        position: 'CTO of Bytom',
+        name: <Msg id="team_member_zyq"/>,
+        position: <Msg id="team_member_zyq_title" />,
         img: img_zhuyq,
         contact: [
           {type: 'linkedin', link: 'https://www.linkedin.com/in/yiqi-zhu-56608963/'},
@@ -67,8 +69,8 @@ export default {
         ],
       },
       {
-        name: 'Jin Lei',
-        position: 'Co-CTO of Bytom',
+        name: <Msg id="team_member_jl" />,
+        position: <Msg id="team_member_jl_title" />,
         img: img_jinl,
         contact: [
           {type: 'linkedin', link: 'https://www.linkedin.com/in/jinlei/'},
@@ -76,8 +78,8 @@ export default {
         ],
       },
       {
-        name: 'Ma Yaoyao',
-        position: 'Blockchain Engineer',
+        name: <Msg id="team_member_myy" />,
+        position: <Msg id="team_member_dev_title" />,
         img: img_mayy,
         contact: [
           {type: 'linkedin', link: 'https://www.linkedin.com/in/%E8%80%80%E8%80%80-%E9%A9%AC-596414132/'},
@@ -85,8 +87,8 @@ export default {
         ],
       },
       {
-        name: 'Yang Sheng',
-        position: 'Blockchain Engineer',
+        name: <Msg id="team_member_ys" />,
+        position: <Msg id="team_member_dev_title" />,
         img: img_yangs,
         contact: [
           {type: 'linkedin', link: ''},
@@ -94,8 +96,8 @@ export default {
         ],
       },
       {
-        name: 'Lin Haoyu',
-        position: 'Blockchain Engineer',
+        name: <Msg id="team_member_lhy" />,
+        position: <Msg id="team_member_dev_title" />,
         img: img_linhy,
         contact: [
           {type: 'linkedin', link: 'https://www.linkedin.com/in/haoyu-lin-239474123/'},
@@ -103,8 +105,8 @@ export default {
         ],
       },
       {
-        name: 'Wang Zhang',
-        position: 'Blockchain Engineer',
+        name: <Msg id="team_member_wz"/>,
+        position: <Msg id="team_member_dev_title" />,
         img: img_wangz,
         contact: [
           {type: 'linkedin', link: ''},
@@ -112,8 +114,8 @@ export default {
         ],
       },
       {
-        name: 'Shen Ao',
-        position: 'Blockchain Engineer',
+        name: <Msg id="team_member_sa"/>,
+        position: <Msg id="team_member_dev_title" />,
         img: img_shena,
         contact: [
           {type: 'linkedin', link: 'https://www.linkedin.com/in/%E6%95%96-%E6%B2%88-89976a11b/'},
@@ -121,8 +123,8 @@ export default {
         ],
       },
       {
-        name: 'Zhang Chengcheng',
-        position: 'Blockchain Engineer',
+        name: <Msg id="team_member_zcc" />,
+        position: <Msg id="team_member_dev_title" />,
         img: img_zhangcc,
         contact: [
           {type: 'linkedin', link: 'https://www.linkedin.com/in/%E6%88%90%E6%88%90-%E5%BC%A0-705381169/'},
@@ -130,8 +132,8 @@ export default {
         ],
       },
       {
-        name: 'Lin Zhiting',
-        position: 'Front-End Engineer',
+        name: <Msg id="team_member_lzt" />,
+        position: <Msg id="team_member_dev_fe_title" />,
         img: img_linzt,
         contact: [
           {type: 'linkedin', link: 'https://www.linkedin.com/in/zhitinglin/'},
@@ -139,8 +141,8 @@ export default {
         ],
       },
       {
-        name: 'Qiao Yu',
-        position: 'Front-End Engineer',
+        name: <Msg id="team_member_qy" />,
+        position: <Msg id="team_member_dev_fe_title" />,
         img: img_qiaoy,
         contact: [
           {type: 'linkedin', link: ''},
@@ -161,8 +163,8 @@ export default {
       //   ],
       // },
       {
-        name: 'Qu Zhaoxiang',
-        position: 'COO of Bytom',
+        name: <Msg id="team_member_qzx" />,
+        position: <Msg id="team_member_qzx_title" />,
         img: img_quzx,
         contact: [
           {type: 'twitter', link: 'https://twitter.com/He1l_Q'},
@@ -170,16 +172,16 @@ export default {
         ],
       },
       {
-        name: 'Li Zongcheng',
-        position: 'CFO of Bytom',
+        name: <Msg id="team_member_lzc" />,
+        position: <Msg id="team_member_lzc_title" />,
         img: img_lizc,
         contact: [
           {type: 'email', link: 'lizc@8btc.com'},
         ],
       },
       {
-        name: 'Ma Qianli',
-        position: 'Operation Director',
+        name: <Msg id="team_member_mql" />,
+        position: <Msg id="team_member_mql_title" />,
         img: img_maql,
         contact: [
           {type: 'linkin', link: ''},
@@ -187,8 +189,8 @@ export default {
         ],
       },
       {
-        name: 'Zhong Lifei',
-        position: 'Tech Operation Director',
+        name: <Msg id="team_member_zlf" />,
+        position: <Msg id="team_member_zlf_title" />,
         img: img_zhonglf,
         contact: [
           {type: 'linkin', link: 'https://www.linkedin.com/in/%E7%AB%8B%E9%A3%9E-%E9%92%9F-901115b0/'},
@@ -196,8 +198,8 @@ export default {
         ],
       },
       {
-        name: 'Yi Ren',
-        position: 'Head of Bytom US',
+        name: <Msg id="team_member_ry" />,
+        position: <Msg id="team_member_ry_title" />,
         img: img_reny,
         contact: [
           {type: 'linkin', link: 'https://www.linkedin.com/in/yi-ren-098303149/'},
@@ -205,16 +207,16 @@ export default {
         ],
       },
       {
-        name: 'Huang Xinglong',
-        position: 'Tech Operation Manager',
+        name: <Msg id="team_member_hxl" />,
+        position: <Msg id="team_member_hxl_title" />,
         img: img_huangxl,
         contact: [
           {type: 'email', link: 'huangxl@bytom.io'},
         ],
       },
       {
-        name: 'Li Kaiyuan',
-        position: 'Project Assistant',
+        name: <Msg id="team_member_lky" />,
+        position: <Msg id="team_member_lky_title" />,
         img: img_liky,
         contact: [
           {type: 'linkin', link: ''},
@@ -222,8 +224,8 @@ export default {
         ],
       },
       {
-        name: 'Wen Jiacheng',
-        position: 'Oversea Operation Manager',
+        name: <Msg id="team_member_wjc" />,
+        position: <Msg id="team_member_wjc_title" />,
         img: img_wenjc,
         contact: [
           {type: 'linkin', link: 'https://www.linkedin.com/in/%E5%98%89%E6%88%90-%E7%BF%81-815918161/'},
@@ -231,8 +233,8 @@ export default {
         ],
       },
       {
-        name: 'Fan Mengxing',
-        position: 'Activity Operation Manager',
+        name: <Msg id="team_member_fmx" />,
+        position: <Msg id="team_member_fmx_title" />,
         img: img_fanmx,
         contact: [
           {type: 'linkin', link: 'https://www.linkedin.com/in/%E9%86%92-%E6%A2%A6-392635175/'},

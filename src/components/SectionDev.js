@@ -1,7 +1,7 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import css from 'styled-components';
 import img_bg from '../images/bg-dev-banner.png';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 
 
 const Wrap = css.div`
@@ -67,8 +67,8 @@ const Button = css(Link)`
 const SectionDev = () => (
   <Wrap>
     <Cont>
-      <h1>Transfer Assets from <br/> Atomic World to Byteworld</h1>
-      <Button to="/dev">Become a developer</Button>
+      <Msg id="home_banner_title" tagName="h1" values={{br: <br />}} />
+      <Button to="/dev"><Msg id="home_banner_btn" /></Button>
     </Cont>
   </Wrap>
 );

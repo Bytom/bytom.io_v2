@@ -7,42 +7,6 @@ import img_video_bg from '../images/play.png';
 // import media_bytom from '../images/bytom.v1.mp4';
 const media_bytom = '//bytom.oss-cn-hongkong.aliyuncs.com/video/bytom.v1.mp4';
 
-
-const list = [
-  {
-    img: img_bg,
-    cont: 'Compatible with the UTXO',
-  },
-  {
-    img: img_bg,
-    cont: 'General address format'
-  },
-  {
-    img: img_bg,
-    cont: 'Asset naming using ODIN'
-  },
-  {
-    img: img_bg,
-    cont: 'Enhanced trading flexibility'
-  },
-  {
-    img: img_bg,
-    cont: 'Cross-chain & Side-chain'
-  },
-  {
-    img: img_bg,
-    cont: 'Friendly to AI ASIC-chips'
-  },
-  {
-    img: img_bg,
-    cont: 'Separate transaction signatures'
-  },
-  {
-    img: img_bg,
-    cont: 'Encryption standard compatible'
-  },
-];
-
 const Wrap = css.div`
   width: 100%;
   height: 520px;
@@ -186,10 +150,10 @@ const SectionVideo = ({ info }) => {
         <Line />
         <List className="clearfix">
           {
-            list.map((item, index) => (
-              <Item img={item.img} key={index}>
+            info.list.map((item, index) => (
+              <Item key={index}>
               <span className="blue_dot"></span>
-              {item.cont}
+              {item}
               </Item>
             ))
           }

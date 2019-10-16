@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 import css from 'styled-components';
 import ajax from 'axios';
 import _conf from '../conf/config';
@@ -76,17 +76,15 @@ export default function Faucet() {
   }
   return (
     <Wrap>
-      <h2>Wallet Address</h2>
+      <Msg id="dev_wallet_address" />
       <input placeholder="Bytom Testnet Wallet Address..." onChange={e => setAddress(e.target.value)} type="text"/>
-      {result === 2 && <ErrMsg>* Please input correct Bytom testnet address.</ErrMsg>}
-      {result === 1 && <ErrMsg success>* Successed.</ErrMsg>}
-      <button onClick={getBtm}>Get testnet 10 BTM for free</button>
-      <p>
-        Please input testnet address which is start from ‘tm’, here is Bytom Wallet official
-        <Link to="/wallet"> download </Link>
-        and
-        <a target="_blank" href="https://docs.bytom.io/en-us/docs/10_2_bytom_kit.html"> instruction </a>
-      </p>
+      {result === 2 && <ErrMsg>* <Msg id="dev_wallet_err_msg" /></ErrMsg>}
+      {result === 1 && <ErrMsg success>* <Msg id="dev_wallet_success_msg" /></ErrMsg>}
+      <button onClick={getBtm}><Msg id="dev_wallet_btn" /></button>
+      <Msg tagName="p" id="dev_wallet_des" values={{
+        download: <Link to="/wallet"> <Msg id="dev_wallet_down" /> </Link>,
+        intro: <a target="_blank" href="https://docs.bytom.io/en-us/docs/10_2_bytom_kit.html"> <Msg id="dev_wallet_intro" /> </a>
+      }} />
     </Wrap>
   )
 }

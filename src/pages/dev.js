@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 import css from 'styled-components';
 
 import _conf from '../conf/dev.conf';
@@ -159,8 +159,8 @@ const MobileCardWrap = css.div`
 
 const Document = () => (
   <DocumentBanner>
-    <h1>Bytom Develop Document</h1>
-    <a href={_conf.help}>View more</a>
+    <Msg id="dev_banner_title" tagName="h1" />
+    <a href={_conf.help}><Msg id="dev_banner_btn" /></a>
   </DocumentBanner>
 );
 
@@ -179,14 +179,14 @@ const MobileCard = ({title, img, link, des, exrta}) => (
 
 const DevPage = ({ location }) => (
   <Layout>
-    <SEO title="Developer" />
+    <SEO title={{zh: '开发者', en: 'Developer'}} />
     <Banner>
       <Cont>
         <BannerWrap>
           {/* <img src={img_dev} alt=""/> */}
           <div>
-            <h1>Bytom Developer</h1>
-            <p>Committed to development of <br/> Bytom blockchain ecosystem</p>
+            <Msg tagName="h1" id="dev_title" />
+            <Msg tagName="p" id="dev_des" values={{br: <br />}} />
           </div>
           <Faucet />
         </BannerWrap>
@@ -194,14 +194,14 @@ const DevPage = ({ location }) => (
     </Banner>
     <Tabs
       tab={[
-        <span>Tech & Tools</span>,
-        <span>Bounties</span>,
+        <Msg id="dev_tab_1" />,
+        <Msg id="dev_tab_2" />,
       ]}
       defaultPanel={location.state && location.state.bounty ? 1 : 0}
     >
       <TechWrap>
         <Cont>
-          <SubTitle>Technology</SubTitle>
+          <SubTitle><Msg id="dev_block_tech_title" /></SubTitle>
           <TabsCont>
             {
               _conf.techList.map((item, index) => <ImgCard key={index} {...item} />)
@@ -210,7 +210,7 @@ const DevPage = ({ location }) => (
         </Cont>
         <Document />
         <Cont>
-          <SubTitle>Development Tools</SubTitle>
+          <SubTitle><Msg id="dev_tool_title" /></SubTitle>
           <TabsCont>
             {
               _conf.toolsList.map((item, index) => (
@@ -226,7 +226,7 @@ const DevPage = ({ location }) => (
 
       <BountyWrap>
         <Cont>
-          <SubTitle>Minority Report</SubTitle>
+          <SubTitle><Msg id="dev_bounties_min_report" /></SubTitle>
           <TabsCont>
           {
             _conf.bountyList.map((item, index) => (
@@ -239,7 +239,7 @@ const DevPage = ({ location }) => (
         </Cont>
         <Document />
         <Cont>
-          <SubTitle>Long Term</SubTitle>
+          <SubTitle><Msg id="dev_bounties_lang" /></SubTitle>
           <TabsCont>
             {
               _conf.langTermList.map((item, index) => (

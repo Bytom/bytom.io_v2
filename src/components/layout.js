@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
+import { injectIntl, Link, FormattedMessage as Msg, IntlContextConsumer } from "gatsby-plugin-intl"
 
 import css from 'styled-components';
 import Header from './header';
@@ -14,13 +14,19 @@ const Wrap = css.div`
 `;
 
 const Layout = ({ children, light = false }) => (
-  <>
-    <Header light={light} />
-    <Wrap>
-      {children}
-    </Wrap>
-    <Footer />
-  </>
+  <IntlContextConsumer>
+    {
+      () => (
+        <>
+          <Header light={light} />
+          <Wrap>
+            {children}
+          </Wrap>
+          <Footer />
+        </>
+      )
+    }
+  </IntlContextConsumer>
 )
 
 Layout.propTypes = {

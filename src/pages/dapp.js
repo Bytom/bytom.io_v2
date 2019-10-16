@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 import css from 'styled-components';
 
 import _conf from '../conf/dapp.conf';
@@ -146,8 +146,8 @@ const Follow = css.div`
 
 const Document = () => (
   <DocumentBanner>
-    <h1>Bytom Develop Document</h1>
-    <a href={_conf.help}>View more</a>
+    <Msg id="dev_banner_title" tagName="h1" />
+    <a href={_conf.help}><Msg id="dev_banner_btn" /></a>
   </DocumentBanner>
 );
 
@@ -171,7 +171,7 @@ const DevPage = ({ location }) => (
       <Cont>
         <BannerWrap>
           <div>
-            <p>All the applications come from the community,<br/>welcome to develop your own applications on Bytom.</p>
+            <Msg tagName="p" id="dapp_title" values={{br: <br />}} />
             <Follow><Follows size={32} /></Follow>
           </div>
         </BannerWrap>
@@ -179,7 +179,7 @@ const DevPage = ({ location }) => (
     </Banner>
     <TechWrap>
         <Cont>
-          <SubTitle>Solutions</SubTitle>
+          <SubTitle><Msg id="dapp_subtitile_1" /></SubTitle>
           <TabsCont>
             {
               _conf.solutions.map((item, index) => <ImgCard key={index} {...item} />)
@@ -188,7 +188,7 @@ const DevPage = ({ location }) => (
         </Cont>
         <Document />
         <Cont>
-          <SubTitle>Dapp</SubTitle>
+          <SubTitle><Msg id="dapp_subtitile_2" /></SubTitle>
           <TabsCont>
             {
               _conf.dapps.map((item, index) => <ImgCard key={index} {...item} />)

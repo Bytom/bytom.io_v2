@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 
 import img_anybit from '../images/wallet/mobile/wallet-anybit@2x.png';
 import img_bycoin from '../images/wallet/mobile/wallet-bycoin@2x.png';
@@ -24,7 +25,7 @@ export default {
       version: 'V 1.0.9',
       links: [
         null,
-        {title: 'Download', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71014/bytom-wallet-desktop-1.0.9-mac.zip'}
+        {title: <Msg id="wallet_list_btn_download" />, href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71014/bytom-wallet-desktop-1.0.9-mac.zip'}
       ]
     },
     {
@@ -61,72 +62,72 @@ export default {
   mobileWalletList: [
     {
       img: img_anybit,
-      title: 'Anybit Wallet',
+      title: <Msg id="wallet_mobile_anybit" />,
       link: 'https://www.anybit.io/',
-      des: 'Your Mobile crypto Manager'
+      des: <Msg id="wallet_mobile_anybit_des" />
     },
     {
       img: img_bepal,
-      title: 'Bepal Wallet',
+      title: <Msg id="wallet_mobile_bepal" />,
       link: 'https://www.bepal.pro/Download',
-      des: 'Safe and easy to use with attractive interface'
+      des: <Msg id="wallet_mobile_bepal_des" />
     },
     {
       img: img_bitpie,
-      title: 'Bitpie Wallet',
+      title: <Msg id="wallet_mobile_bitpie" />,
       link: 'https://bitpie.com',
-      des: 'Industry-leading multi-blockchain wallet'
+      des: <Msg id="wallet_mobile_bitpie_des" />
     },
     {
       img: img_bixin,
-      title: 'Bixin Wallet',
+      title: <Msg id="wallet_mobile_binxin" />,
       link: 'https://bixin.com',
-      des: 'Blockchain in your pocket'
+      des: <Msg id="wallet_mobile_binxin_des" />
     },
     {
       img: img_bycoin,
-      title: 'Bycoin Wallet',
+      title: <Msg id="wallet_mobile_bycoin" />,
       link: 'https://wwww.bystack.com/wallet',
-      des: 'Professional digital assets management platform'
+      des: <Msg id="wallet_mobile_bycoin_des" />
     },
     {
       img: img_cobo,
-      title: 'Cobo',
+      title: <Msg id="wallet_mobile_cobo" />,
       link: 'https://cobo.com/',
-      des: 'Grow and protect crypto assets for everyone'
+      des: <Msg id="wallet_mobile_cobo_des" />
     },
     {
       img: img_hoo,
-      title: 'Hoo Wallet',
+      title: <Msg id="wallet_mobile_hoo" />,
       link: 'https://hoo.com',
-      des: 'Use Hoo to achieve your ambition'
+      des: <Msg id="wallet_mobile_hoo_des" />
     },
     {
       img: img_hyperpay,
-      title: 'Hyperpay Wallet',
+      title: <Msg id="wallet_mobile_hyperpay" />,
       link: 'https://hyperpay.me/download',
-      des: 'The bastion of wallet security, watch your assets…'
+      des: <Msg id="wallet_mobile_hyperpay_des" />
     },
     {}
   ],
   browserWalletList: [
     {
       img: img_bystore,
-      title: 'Byone',
+      title: <Msg id="wallet_byone" />,
       link: 'https://chrome.google.com/webstore/detail/bystore/nlgbhdfgdhgbiamfdfmbikcdghidoadd',
-      des: 'Bytom Wallet Chrome extension'
+      des: <Msg id="wallet_byone_des" />
     },
   ],
   hardwareWalletList: [
     {
       img: img_bepa,
-      title: 'Bepa Pro S',
+      title: <Msg id="wallet_bepal" />,
       link: 'https://www.bepal.pro/bepal-pro-s',
-      des: 'Focusing on the safety of blockchain'
+      des: <Msg id="wallet_bepal_des" />
     },
   ],
   historyVersions: {
-    title: ['Versions', 'Files', 'Checksums(MD5)'],
+    title: [<Msg id="wallet_list_version" />, <Msg id="wallet_list_files" />, <><Msg id="wallet_list_md5" />(MD5)</>],
     width: [null, null, 200],
     data: [
       ['Bytom Wallet for macOS v1.0.9', 'bytom-wallet-desktop-1.0.9-mac.zip', '16fcaa1b55801c74b31bc0a0282c6bc3'],
@@ -135,13 +136,13 @@ export default {
       ['Bytom Wallet for Linux 32 v1.0.9', 'bytom-wallet-desktop-1.0.9-linux-ia32.zip', 'ec21a1abe16314b515dcb0dc5c603e76'],
       ['Bytom Wallet for Linux 64 v1.0.9', 'bytom-wallet-desktop-1.0.9-linux-x64.zip', 'ac5073f4a563f021e56a746dac0c160e'],
     ],
-    footer: <a target="_blank" href="https://github.com/Bytom/bytom/releases">More versions &gt;&gt;</a>
+    footer: <a target="_blank" href="https://github.com/Bytom/bytom/releases"><Msg id="wallet_list_more" /> &gt;&gt;</a>
   },
   fileList: {
-    title: ['File', 'Height', 'Size', 'Checksums(MD5)', 'Last update', 'Link'],
+    title: [<Msg id="wallet_list_file" />, <Msg id="wallet_list_height" />, <Msg id="wallet_list_size" />, <><Msg id="wallet_list_md5" />(MD5)</>, <Msg id="wallet_list_update" />, <Msg id="wallet_list_link" />],
     width: [280, 110, 150, 350, 260],
     data: [
-      ['190813-Update.db.zip', '285597', '542.7MB', 'C34D05F35494DA6C58F53B319538D378', '2019-08-13 15:50:00 (GMT+8)', <a target="_blank" href="https://sourceforge.net/projects/bytomblockchain/files/core.db/190813-Update.db.zip">Download</a>],
+      ['190813-Update.db.zip', '285597', '542.7MB', 'C34D05F35494DA6C58F53B319538D378', '2019-08-13 15:50:00 (GMT+8)', <a target="_blank" href="https://sourceforge.net/projects/bytomblockchain/files/core.db/190813-Update.db.zip"><Msg id="wallet_list_btn_download" /></a>],
     ],
   },
 };

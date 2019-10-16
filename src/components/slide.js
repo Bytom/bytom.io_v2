@@ -1,6 +1,6 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import css from 'styled-components';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 
 import img_banner from '../images/Banner-00@2x.png';
 
@@ -50,13 +50,20 @@ const Cont = css.div`
     }
   }
 `;
-const Slide = () => (
+const Slide = ({ intl }) => (
   <Wrap>
     <Cont>
-      <h1>Embrace the <span>New Era</span> of<br/> Bytom Blockchain</h1>
-      <p>Create diverse assets and<br/>a programmable economy</p>
+      {
+        intl.locale === 'en' ? 
+          <>
+            <h1>Embrace the <span>New Era</span> of<br/> Bytom Blockchain</h1>
+            <p>Create diverse assets and<br/>a programmable economy</p>
+          </>
+        : <><h1><Msg tagName="i" id="home_slide_title" /></h1><Msg id="home_slide_title_des" tagName="p" /></>
+      }
+      
     </Cont>
   </Wrap>
 );
 
-export default Slide;
+export default injectIntl(Slide);

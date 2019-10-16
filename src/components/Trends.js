@@ -1,6 +1,6 @@
-import { Link } from 'gatsby';
 import React, { useState, useEffect } from 'react';
 import css from 'styled-components';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 
 import Card from '../components/Card';
 import _conf from '../conf/config';
@@ -83,14 +83,14 @@ const More = css.div`
 const getTimes = times => {
   let result = '';
   try {
-    result = format(new Date(+times), 'MMM Do, YYYY');
+    result = format(new Date(+times), 'YYYY-MM-DD');
   } catch (err) {
     console.log(err);
   }
   return result;
 };
 
-const Trends = function({ light = false, style = {} }) {
+const Trends = function({ light = false, style = {}, intl }) {
   const [loading, setLoading] = useState(true);
   const [news, setNews] = useState([]);
   useEffect(() => {
@@ -101,7 +101,7 @@ const Trends = function({ light = false, style = {} }) {
         data: {
           data: { list },
         },
-      } = await ajax.get(_conf.api.news, { params: { page_size, lang: 'en' } });
+      } = await ajax.get(_conf.api.news, { params: { page_size, lang: intl.locale || 'en' } });
       setNews(list);
       setLoading(false);
     };
@@ -126,7 +126,7 @@ const Trends = function({ light = false, style = {} }) {
       <Cont style={style}>
         {!light && (
           <h1>
-            Trends <Link to="/blog">View more &gt;&gt;</Link>
+            <Msg id="home_news_title" /> <Link to="/blog"><Msg id="home_news_more" /> &gt;&gt;</Link>
           </h1>
         )}
         <CardWrap isLight={light}>
@@ -153,4 +153,4 @@ const Trends = function({ light = false, style = {} }) {
   );
 };
 
-export default Trends;
+export default injectIntl(Trends);

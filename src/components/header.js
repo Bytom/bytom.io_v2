@@ -1,7 +1,7 @@
-import { Link } from 'gatsby';
 import React, { useState } from 'react';
 import css from 'styled-components';
 import _conf from '../conf/config'
+import { Link, injectIntl, FormattedMessage as Msg, changeLocale } from "gatsby-plugin-intl";
 
 import img_logo from '../images/logo.png';
 import img_logo_light from '../images/logo_light.png';
@@ -21,6 +21,7 @@ const Cont = css.div`
   width: 1280px;
   height: 100%;
   margin: 0 auto;
+  position: relative;
   @media (max-width: 640px) {
     width: 100%;
     box-sizing: border-box;
@@ -122,6 +123,12 @@ const SubNavItem = css(MobileNavItem)`
     display: block;
   }
 `;
+const LangNav = css(MobileNav)`
+  top: 80px;
+  @media (max-width: 640px){
+    top: 60px;
+  }
+`;
 const MobileMenuToggle = css.span`
   display: inline-block;
   width: 23px;
@@ -193,23 +200,25 @@ const Header = ({ siteTitle, light }) => {
             <a target="_blank" href="https://devcon.bytom.io">DevCon2</a>
           </MobileNavItem>
         </MobileNav>
-        <MobileNav style={{top: 80}} light={light ? 'true' : 'false'} active={langStatus}>
+        <LangNav light={light ? 'true' : 'false'} active={langStatus}>
           <SubNavItem light={light ? 'true' : 'false'} key={'12'}>
-            <Link to="/en">English</Link>
+            <a onClick={() => changeLocale('en')}>English</a>
           </SubNavItem>
           <SubNavItem light={light ? 'true' : 'false'} key={'13'}>
-            <Link to="/zh">简体中文</Link>
+            <a onClick={() => changeLocale('zh')}>简体中文</a>
           </SubNavItem>
-        </MobileNav>
+        </LangNav>
         <Toolbar>
           <Github light={light ? 'true' : 'false'} target="_blank" href="https://github.com/Bytom/bytom" className="iconfont github" />
-          <Lang light={light ? 'true' : 'false'} onClick={() => toggleLangStatus(!langStatus)} className="iconfont lang" />
+          <Lang light={light ? 'true' : 'false'} onMouseEnter={() => toggleLangStatus(!langStatus)} onClick={() => toggleLangStatus(!langStatus)} className="iconfont lang">
+            
+          </Lang>
           <MobileMenuToggle light={light ? 'true' : 'false'} onClick={() => toggleMobileMenu(!menuStatus)} />
         </Toolbar>
-        <DevCon><a target="_blank" href="https://devcon.bytom.io">DevCon2</a></DevCon>
+        {/* <DevCon><a target="_blank" href="https://devcon.bytom.io">DevCon2</a></DevCon> */}
       </Cont>
     </Wrap>
   );
 };
 
-export default Header;
+export default injectIntl(Header);

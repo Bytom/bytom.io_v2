@@ -1,5 +1,5 @@
-import { Link } from 'gatsby';
 import React, { useState } from 'react';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 import css from 'styled-components';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
@@ -7,38 +7,38 @@ import Follows from '../components/Follows';
 
 const links = [
   {
-    title: 'Links',
+    title: <Msg id="nav_links" />,
     list: [
-      {title: 'Wallet', href: '/wallet'},
-      {title: 'Explorer', href: 'http://blockmeta.com/'},
-      {title: 'Blog', href: '/blog/'},
+      {title: <Msg id="nav_wallet" />, href: '/wallet'},
+      {title: <Msg id="nav_exp" />, href: 'http://blockmeta.com/'},
+      {title: <Msg id="nav_blog" />, href: '/blog/'},
       // {title: 'Forum', href: 'https://forum.bytom.io/'},
     ]
   },
   {
-    title: 'Developer',
+    title: <Msg id="nav_developer" />,
     list: [
       {title: 'GitHub', href: 'https://github.com/Bytom/bytom'},
-      {title: 'Wiki', href: 'https://docs.bytom.io/'},
-      {title: 'Tools', href: '/dev/'},
-      {title: 'Bounty', href: '/dev', state: {bounty: true}},
+      {title: <Msg id="nav_wiki" />, href: 'https://docs.bytom.io/'},
+      {title: <Msg id="nav_tools" />, href: '/dev/'},
+      {title: <Msg id="nav_bounty" />, href: '/dev', state: {bounty: true}},
     ]
   },
   {
-    title: 'About',
+    title: <Msg id="nav_aboutus" />,
     list: [
       // {title: 'About', href: '/'},
-      {title: 'Team', href: '/team',},
-      {title: 'Ecosystem', href: '/ecosystem'},
-      {title: 'White Paper', href: 'https://bytom.io/Bytom-Technical-White-Paper-EN.pdf'},
+      {title: <Msg id="nav_team" />, href: '/team',},
+      {title: <Msg id="nav_eco" />, href: '/ecosystem'},
+      {title: <Msg id="nav_white_paper" />, href: 'https://bytom.io/Bytom-Technical-White-Paper-EN.pdf'},
       {title: 'Bytom Logo', href: 'https://cdn.bytom.io/res/Logo_Bytom_v2.1.zip'},
     ]
   },
   {
-    title: 'Contact',
+    title: <Msg id="nav_contack" />,
     list: [
       {title: 'E-Mail: contact@bytom.io', href: 'mailto:contact@bytom.io'},
-      {title: 'Website: bytom.io', href: '/'},
+      {title: <Msg id="nav_website" />, href: '/'},
     ]
   },
 ];
@@ -79,10 +79,10 @@ const Item = css.div`
   ul li{
     font-size: 14px;
     margin: 16px 0;
-    span{
-      color: rgba(255, 255, 255, 0.4);
-      cursor: not-allowed;
-    }
+    // span{
+    //   color: rgba(255, 255, 255, 0.4);
+    //   cursor: not-allowed;
+    // }
     a{
       color: #fff;
     }
@@ -128,7 +128,7 @@ const Follow = css.div`
     display: none;
   }
 `;
-const Msg = css.div`
+const TipsMsg = css.div`
   font-size: 12px;
   font-weight: 400;
   color: ${props => props.err ? '#E21919' : '#fff'};
@@ -199,14 +199,14 @@ const Footer = ({ siteTitle }) => {
             ))
           }
           <Item>
-            <h2>Follow us</h2>
+            <Msg id="nav_follow" tagName="h2" />
             <Follow>
               <input value={email} onChange={(e) => handleChange(e.target.value)} type="email"/>
-              <button onClick={handleSubscribe}>Subscribe</button>
+              <button onClick={handleSubscribe}><Msg id="nav_subscribe" /></button>
             </Follow>
             <Follows />
-            { isSubscribed && <Msg>* Thanks for your subscrition.</Msg>}
-            { isErr && <Msg err>* Please input correct mailbox format.</Msg>}
+            { isSubscribed && <TipsMsg><Msg id="nav_subscribe_success" /></TipsMsg>}
+            { isErr && <TipsMsg err><Msg id="nav_subscribe_fail" /></TipsMsg>}
             <MobileInfo>
               <p>E-Mail: contact@bytom.io</p>
               <p>Website: bytom.io</p>

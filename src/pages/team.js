@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 import css from 'styled-components';
 
 import Layout from '../components/layout';
@@ -153,12 +153,12 @@ const Name = css.h3`
 export default function Team() {
   return (
     <Layout light>
-      <SEO title="Team" />
+      <SEO title={{zh: '团队', en: 'Team'}} />
       <Banner>
         <Cont style={{position: 'relative'}}>
           <Head>
-            <h1>Meet <span>our team</span></h1>
-            <p>Bytom team are  experienced blockchain enthusiasts in tech, marketing and operation. In blockchain we trust!</p>
+            <Msg tagName="h1" id="team_title" values={{b: <Msg id="team_title_2" />}} />
+            <Msg id="team_des" tagName="p" />
           </Head>
         </Cont>
       </Banner>

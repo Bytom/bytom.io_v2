@@ -6,7 +6,7 @@ import TopFix from '../components/ecosys/TopFix'
 const EcosystomPage = () => {
   return (
     <Layout>
-      <SEO title="Ecosystom" />
+      <SEO title={{zh: '生态', en: 'Ecosystom'}} />
       <TopFix/> 
     </Layout>
   )

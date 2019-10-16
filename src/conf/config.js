@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
+
 export default {
   api: {
     news: 'https://webapi.8btc.com/bytom/news/list', //page_sie, page, lang = en,zh
@@ -7,7 +10,7 @@ export default {
   },
   nav: [
     {
-      name: 'Developer',
+      name: <Msg id="nav_developer"/>,
       href: '/dev/',
     },
     {
@@ -15,11 +18,11 @@ export default {
       href: 'https://www.bystack.com/',
     },
     {
-      name: 'Ecosystem',
+      name: <Msg id="nav_eco" />,
       href: '/ecosystem/',
     },
     {
-      name: 'Wallet',
+      name: <Msg id="nav_wallet" />,
       href: '/wallet/',
     },
     {
@@ -27,11 +30,11 @@ export default {
       href: '/dapp/',
     },
     {
-      name: 'Explorer',
+      name: <Msg id="nav_exp" />,
       href: 'https://blockmeta.com',
     },
     {
-      name: 'Blog',
+      name: <Msg id="nav_blog" />,
       href: '/blog/',
     },
   ],

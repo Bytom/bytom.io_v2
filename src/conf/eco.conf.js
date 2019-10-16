@@ -1,6 +1,8 @@
+import React from 'react';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 export default {
   ecoList: [{
-      title: 'Wallets',
+      title: <Msg id="eco_nav_wallet" />,
       list: [{
           img: require('../images/eco/1-Anybit.png'),
           title: 'Anybit',
@@ -49,7 +51,7 @@ export default {
       ]
     },
     {
-      title: 'Explorers',
+      title: <Msg id="eco_nav_exp" />,
       list: [{
           img: require('../images/eco/2-Blockmeta.png'),
           title: 'Blockmeta',
@@ -68,7 +70,7 @@ export default {
       ]
     },
     {
-      title: 'Mining Pools',
+      title: <Msg id="eco_nav_pool" />,
       list: [{
           img: require('../images/eco/3-F2Pool.png'),
           title: 'F2Pool',
@@ -112,7 +114,7 @@ export default {
       ]
     },
     {
-      title: 'Exchanges',
+      title: <Msg id="eco_nav_exchange" />,
       list: [{
           img: require('../images/eco/4-OKEx.png'),
           title: 'OKEx',
@@ -216,7 +218,7 @@ export default {
       ]
     },
     {
-      title: 'Safety',
+      title: <Msg id="eco_nav_safety" />,
       list: [{
           img: require('../images/eco/5-360.png'),
           title: '360'
@@ -240,7 +242,7 @@ export default {
       ]
     },
     {
-      title: 'Partners',
+      title: <Msg id="eco_nav_partners" />,
       list: [{
           img: require('../images/eco/6-8BTC.png'),
           title: '8BTC'

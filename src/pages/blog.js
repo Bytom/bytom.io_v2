@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 import css from 'styled-components';
 
 import Layout from '../components/layout';
@@ -34,10 +34,10 @@ const Follow = css.div`
 export default function Blog() {
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title={{zh: '博客', en: 'Blog'}} />
       <Banner>
         {/* <PageTitle>Bytom Trends</PageTitle> */}
-        <PageDesc>Announcement, Project weekly report, article, <br/> and videos about Bytom will synchronous update.</PageDesc>
+        <PageDesc><Msg id="blog_title" values={{br: <br />}} /></PageDesc>
         <Follow><Follows size={32} /></Follow>
       </Banner>
       <Tabs

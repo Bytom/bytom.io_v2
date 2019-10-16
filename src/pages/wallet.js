@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import css from 'styled-components';
+import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -248,9 +248,9 @@ const CardWrap = css.div`
 
 const WalletPage = () => (
   <Layout>
-    <SEO title="Wallet" />
+    <SEO title={{zh: '钱包', en: 'Wallet'}} />
     <Banner>
-      <Title>Get started with Bytom Wallet</Title>
+      <Title><Msg id="wallet_title" /></Title>
       <Img src={img_banner} />
     </Banner>
     <Wrap>
@@ -258,8 +258,8 @@ const WalletPage = () => (
         <Download>
           <img src={img_desktop} alt=""/>
           <div>
-            <h1><img src={img_logo} alt=""/>Bytom Wallet<span>&nbsp;for Desktop</span></h1>
-            <p>Bytom wallet is the official full-node wallet highly recommended for miner, developer, enterprise and personal user.</p>
+            <h1><img src={img_logo} alt=""/><Msg id="wallet_desktop" /></h1>
+            <Msg id="wallet_desktop_des" tagName="p" />
             <Table>
               <tbody>
               {
@@ -285,22 +285,22 @@ const WalletPage = () => (
           <ul>
             <li>
               <span>STEP 1</span>
-              <span>Make sure that you have last version of Bytom Full-node Wallet and have enough free space in destination disk.</span>
+              <Msg id="wallet_step_1" />
             </li>
             <li>
               <span>STEP 2</span>
               <span>
-                Download object file and make sure you close Bytom Wallet software.
+                <Msg id="wallet_step_2" />
                 <ol>
-                  <li>-  For Windows users, replace object file in shortcut ‘%APPDATA%/Roaming/Bytom/data/core.db’  </li>
-                  <li>-  For Mac users, replace object file in shortcut ‘~/Library/*Application Support/Bytom/data/core.db’</li>
-                  <li>-  For Linux users, replace object file in shortcut ‘~/.bytom/data/core.db’</li>
+                  <li>-  <Msg id="wallet_step_2_1" />  </li>
+                  <li>-  <Msg id="wallet_step_2_2" />  </li>
+                  <li>-  <Msg id="wallet_step_2_3" />  </li>
                 </ol>
               </span>
             </li>
             <li>
               <span>STEP 3</span>
-              <span>Make sure that you set correct destination for datadir and replace object file to your downloaded bytom wallet folder.</span>
+              <Msg id="wallet_step_3" /> 
             </li>
           </ul>
         </Step>
@@ -308,18 +308,11 @@ const WalletPage = () => (
       <SubBanner />
       <Tabs
           tab={
-            isMobile ? 
-              [
-                <span>Mobile</span>,
-                <span>Browser Extension</span>,
-                <span>Hardware</span>,
-              ]
-            : 
-              [
-                <span>Mobile Wallet</span>,
-                <span>Browser Extension</span>,
-                <span>Hardware Wallet</span>,
-              ]
+            [
+              <Msg values={{extra: isMobile ? ' ' : <Msg id="wallet_des" />}} id="wallet_mobile" />,
+              <Msg id="wallet_browser" />,
+              <Msg values={{extra: isMobile ? ' ' : <Msg id="wallet_des" />}}  id="wallet_hardware" />,
+            ]
           }
         >
           <CardWrap>
