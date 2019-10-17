@@ -45,6 +45,7 @@ const Msg = css.div`
     color: #000;
     font-size: 44px;
     line-height: 64px;
+    font-weight: bold;
   }
   span{
     color: #035BD4;
