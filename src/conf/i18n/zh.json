@@ -27,11 +27,11 @@
   "nav_subscribe_success": "* 感谢提交.",
   "nav_subscribe_fail": "*请输入正确的邮箱地址.",
 
-  "home_slide_feature_part1_title": "智能",
+  "home_slide_feature_part1_title": "智能共识",
   "home_slide_feature_part1_des": "共识机制引入新型POW算法，可为深度学习提供硬件加速服务。",
-  "home_slide_feature_part2_title": "灵活",
+  "home_slide_feature_part2_title": "合约规范",
   "home_slide_feature_part2_des": "高可定制的智能合约，完全控制数字资产，为未来经济的提供动力。",
-  "home_slide_feature_part3_title": "高效",
+  "home_slide_feature_part3_title": "高效稳定",
   "home_slide_feature_part3_des": "数字资产原子转移，高并发交换，适用于不同的业务环境。",
 
   "home_video_title": "什么是",

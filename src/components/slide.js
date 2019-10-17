@@ -53,15 +53,16 @@ const Cont = css.div`
 const Slide = ({ intl }) => (
   <Wrap>
     <Cont>
+      <h1>Embrace the <span>New Era</span> of<br/> Bytom Blockchain</h1>
+      {/* <p>Create diverse assets and<br/>a programmable economy</p> */}
       {
         intl.locale === 'en' ? 
           <>
-            <h1>Embrace the <span>New Era</span> of<br/> Bytom Blockchain</h1>
+            {/* <h1>Embrace the <span>New Era</span> of<br/> Bytom Blockchain</h1> */}
             <p>Create diverse assets and<br/>a programmable economy</p>
           </>
-        : <><h1><Msg tagName="i" id="home_slide_title" /></h1><Msg id="home_slide_title_des" tagName="p" /></>
+        : <><Msg id="home_slide_title_des" tagName="p" /></>
       }
-      
     </Cont>
   </Wrap>
 );
