@@ -90,25 +90,29 @@ const getTimes = times => {
   return result;
 };
 
-const Trends = function({ light = false, style = {}, intl }) {
+const Trends = function({ light = false, style = {}, blog = false, intl }) {
   const [loading, setLoading] = useState(true);
   const [news, setNews] = useState([]);
   useEffect(() => {
+    const url = blog ? _conf.api.blog : _conf.api.news;
+    const page_size = light ? 24 : 6;
+    const params = blog ? {} : { page_size, lang: intl.locale || 'en' };
+
     const getList = async () => {
       setLoading(true);
-      const page_size = light ? 24 : 6;
       const {
         data: {
-          data: { list },
+          data,
         },
-      } = await ajax.get(_conf.api.news, { params: { page_size, lang: intl.locale || 'en' } });
-      setNews(list);
+      } = await ajax.get(url, { params });
+      setNews(blog ? data.content : data.list);
       setLoading(false);
     };
     try {
       getList();
     } catch (error) {}
-  }, []);
+  }, [blog]);
+
   if (loading) {
     return (
       <Cont style={style}>
@@ -134,10 +138,10 @@ const Trends = function({ light = false, style = {}, intl }) {
             <Card
               style={{ height: 255 }}
               key={item.id}
-              link={item.link}
+              link={blog ? `/detail?id=${item.slug}` : item.link}
               img={item.image}
               title={item.title}
-              des={getTimes(item.post_time)}
+              des={blog ? '' : getTimes(item.post_time)}
             />
           ))}
         </CardWrap>
