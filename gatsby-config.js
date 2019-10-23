@@ -50,13 +50,13 @@ module.exports = {
         endpoint: 'https://gmail.us20.list-manage.com/subscribe/post?u=bbafc8ca5070bf12853c712d4&amp;id=e8aa0dac65'
       }
     },
-    {
-      resolve: 'gatsby-source-yuque',
-      options: {
-        login: 'rainoy',
-        repo: 'blog',
-      }
-    },
+    // {
+    //   resolve: 'gatsby-source-yuque',
+    //   options: {
+    //     login: 'rainoy',
+    //     repo: 'blog',
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-intl`,
       options: {
