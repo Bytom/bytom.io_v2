@@ -7,6 +7,8 @@ export default {
     faucet: 'https://kit.blockmeta.com/api/v1/get_testnet_coins',
     eventsList: 'https://www.yuque.com/api/v2/repos/biyuanlian/gguo3r/docs',
     eventsDetail: 'https://www.yuque.com/api/v2/repos/biyuanlian/gguo3r/docs/',
+    blog: 'https://api.bystack.com/docapi/v1/toc?id=bytomblockchain/developer',
+    blogDetail: 'https://api.bystack.com/docapi/v1/doc?id=',
   },
   nav: [
     {

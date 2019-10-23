@@ -31,7 +31,12 @@ const Follow = css.div`
   margin: 0 auto;
 `;
 
-export default function Blog() {
+function Blog({ pageContext }) {
+  const isZh = pageContext.intl.language === 'zh';
+  const tabs = ['Blog'];
+  if (isZh) {
+    tabs.push('技术文章');
+  }
   return (
     <Layout>
       <SEO title={{zh: '博客', en: 'Blog'}} />
@@ -41,12 +46,17 @@ export default function Blog() {
         <Follow><Follows size={32} /></Follow>
       </Banner>
       <Tabs
-        tab={['Blog']}
+        tab={tabs}
       >
         <div>
           <TrendsList light style={{padding: '0 0 20px'}} />
+        </div>
+        <div>
+          <TrendsList light blog style={{padding: '0 0 20px'}} />
         </div>
       </Tabs>
     </Layout>
   );
 };
+
+export default injectIntl(Blog);

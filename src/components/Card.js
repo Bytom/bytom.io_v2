@@ -1,7 +1,7 @@
 import React from 'react';
 import css from 'styled-components';
 import CardLoading from './CardLoading';
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-plugin-intl';
 
 const Wrap = css.div`
   width: 392px;
