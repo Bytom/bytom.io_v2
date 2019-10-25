@@ -248,7 +248,7 @@ const CardWrap = css.div`
 
 const WalletPage = () => (
   <Layout>
-    <SEO title={{zh: '钱包', en: 'Wallet'}} />
+    <SEO title={{zh: '钱包', en: 'Wallet'}} keywords={['比原链','Bytom','比原','BTM','比原链钱包','Bytom', 'Wallet','Bystack','Bycoin','Byone','Blockchain','区块链']} />
     <Banner>
       <Title><Msg id="wallet_title" /></Title>
       <Img src={img_banner} />

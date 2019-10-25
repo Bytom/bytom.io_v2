@@ -18,7 +18,7 @@ const IndexPage = () => (
   <Layout>
     <SEO
       title={{zh: '比原链', en: 'Bytom Blockchain'}}
-      keywords={[`bytom`, `btm`, `比原链`]}
+      home
     />
     <Slide></Slide>
     <DesBar features={_conf.features} />
