@@ -34,7 +34,7 @@ export default {
       des: 'for Wins',
       version: 'V 1.0.10',
       links: [
-        {title: 'Win32', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71014/bytom-wallet-desktop-1.0.10-win-ia32.zip'},
+        {title: 'Win32', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71820/bytom-wallet-desktop-1.0.10-win-ia32.zip'},
         {title: 'Win64', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71820/bytom-wallet-desktop-1.0.10-win-x64.zip'},
       ]
     },
