@@ -10,7 +10,7 @@ const keywordList = {
 };
 const descriptionList = {
   zh: '比原链Bytom是一种多元比特资产的区块链开源交互协议，运行在比原链上的不同类型资产可以通过交互协议进行交换、对赌和基于智能合约的复杂性交互操作。比原链的愿景是利用区块链技术创造多样资产与可编程经济。',
-  en: '比原链Bytom是一种多元比特资产的区块链开源交互协议，运行在比原链上的不同类型资产可以通过交互协议进行交换、对赌和基于智能合约的复杂性交互操作。比原链的愿景是利用区块链技术创造多样资产与可编程经济。',
+  en: 'a digital asset layer protocol is the infrastructure of asset internet.',
 };
 
 function SEO({ description, lang, meta, keywords, title, intl, home = false }) {
@@ -27,6 +27,7 @@ function SEO({ description, lang, meta, keywords, title, intl, home = false }) {
             }}
             title={(typeof title === 'string' ? title : title[intl.locale]) + (!home ? (intl.locale === 'zh' ? '- 比原链' : '- Bytom Blockchain') : '')}
             titleTemplate={`%s`}
+            
             meta={[
               {
                 name: `description`,
@@ -45,7 +46,13 @@ function SEO({ description, lang, meta, keywords, title, intl, home = false }) {
                   }
               )
               .concat(meta)}
-          />
+          >
+            {
+              ['zh', 'en'].map(locale => {
+                return <link rel="alternate" href={`https://bytom.io/${locale}`} hrefLang={locale} key={locale}/>
+              })
+            }
+          </Helmet>
         )
       }}
     />
