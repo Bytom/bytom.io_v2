@@ -99,7 +99,7 @@
   "wallet_desktop_des": "Bytom wallet is the official full-node wallet highly recommended for miner, developer, enterprise and personal user.",
   "wallet_list_version": "Versions",
   "wallet_list_files": "Files",
-  "wallet_list_md5": "Checksums (MD5)",
+  "wallet_list_md5": "Checksums",
   "wallet_list_more": "More versions",
   "wallet_list_file": "File",
   "wallet_list_height": "Height",
