@@ -62,8 +62,8 @@ module.exports = {
       options: {
         path: `${__dirname}/src/conf/i18n`,
         languages: [`en`, `zh`],
-        defaultLanguage: `en`,
-        redirect: false,
+        defaultLanguage: 'en',
+        redirect: true,
       }, // import { injectIntl, Link, FormattedMessage as Msg } from "gatsby-plugin-intl"
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
