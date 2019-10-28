@@ -34,9 +34,9 @@ const Follow = css.div`
 function Blog({ pageContext }) {
   const isZh = pageContext.intl.language === 'zh';
   const tabs = ['Blog'];
-  if (isZh) {
-    tabs.push('技术文章');
-  }
+  // if (isZh) {
+  //   tabs.push('技术文章');
+  // }
   return (
     <Layout>
       <SEO title={{zh: '博客', en: 'Blog'}} />
