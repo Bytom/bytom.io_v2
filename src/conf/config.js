@@ -20,6 +20,10 @@ export default {
       href: 'https://www.bystack.com/',
     },
     {
+      name: <Msg id="nav_bp_node" />,
+      href: 'https://www.bystack.com/node',
+    },
+    {
       name: <Msg id="nav_eco" />,
       href: '/ecosystem/',
     },
