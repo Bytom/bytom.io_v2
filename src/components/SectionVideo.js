@@ -5,7 +5,7 @@ import css from 'styled-components';
 import img_bg from '../images/bgv.png';
 import img_video_bg from '../images/play.png';
 // import media_bytom from '../images/bytom.v1.mp4';
-const media_bytom = '//bytom.oss-cn-hongkong.aliyuncs.com/video/bytom.v1.mp4';
+const media_bytom = 'https://cdn.jsdelivr.net/gh/bytomlabs/video/bytom.v1.mp4';
 
 const Wrap = css.div`
   width: 100%;
