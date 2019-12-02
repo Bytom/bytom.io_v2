@@ -66,6 +66,10 @@ const Nav = css.ul`
   .ant-dropdown-menu-item > a, .ant-dropdown-menu-submenu-title > a{
     color: ${props => (props.light === 'true' ? '#000' : '#fff')};
   }
+  .ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title{
+    font-size: 16px;
+    padding: 10px 12px;
+  }
 `;
 const NavItemWrap = css.li`
   float: left;
@@ -217,7 +221,7 @@ const Header = ({ siteTitle, light, intl }) => {
                     </Menu>
                   }
                 >
-                  <a>{item.name} <Icon style={{fontSize: '16px', verticalAlign: '-3px'}} type="down" /></a>
+                  <a>{item.name}</a>
                 </Dropdown>
               ) : (
                 <NavItem key={index} {...item} />

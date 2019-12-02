@@ -12,6 +12,10 @@ export default {
   },
   nav: [
     {
+      name: <Msg id="nav_developer"/>,
+      href: '/dev/',
+    },
+    {
       name: 'Bystack',
       href: 'https://www.bystack.com/',
       children: [
@@ -23,6 +27,11 @@ export default {
           name: <Msg id="nav_bp_node" />,
           href: 'https://www.bystack.com/node'
         },
+      ]
+    },
+    {
+      name: "MOV",
+      children: [
         {
           name: <Msg id="nav_bystack_mov_whitepaper" />,
           href: {
@@ -37,26 +46,22 @@ export default {
       href: '/wallet/',
       children: [
         {
-          name: <Msg id="nav_bystack_wallet" />,
-          href: 'https://www.bystack.com/wallet'
-        },
-        {
           name: <Msg id="nav_bytom_wallet" />,
           href: '/wallet/'
         },
+        {
+          name: <Msg id="nav_bystack_wallet" />,
+          href: 'https://www.bystack.com/wallet'
+        },
       ]
-    },
-    {
-      name: <Msg id="nav_developer"/>,
-      href: '/dev/',
     },
     {
       name: <Msg id="nav_eco" />,
       href: '/ecosystem/',
     },
     {
-      name: 'DApp',
-      href: '/dapp/',
+      name: 'BApp',
+      href: '/bapp/',
     },
     {
       name: <Msg id="nav_exp" />,
