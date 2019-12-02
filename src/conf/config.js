@@ -25,7 +25,7 @@ export default {
         },
         {
           name: <Msg id="nav_bp_node" />,
-          href: 'https://www.bystack.com/node'
+          href: 'https://www.bystack.com/node/detail'
         },
       ]
     },
