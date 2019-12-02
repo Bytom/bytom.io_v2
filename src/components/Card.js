@@ -33,8 +33,8 @@ const Wrap = css.div`
     font-size: 14px;
     color: #B3B3B3;
     padding: 0 20px;
-    height: 16px;
-    padding-bottom: 18px;
+    height: 40px;
+    line-height: 32px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
