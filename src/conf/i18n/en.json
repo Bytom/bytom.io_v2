@@ -27,6 +27,11 @@
   "nav_subscribe": "Subscribe",
   "nav_subscribe_success": "* Thanks for your subscrition.",
   "nav_subscribe_fail": "* Please input correct mailbox format.",
+  "nav_bystack_home": "Bystack Homepage",
+  "nav_bystack_bp_node": "Bystack BP",
+  "nav_bystack_mov_whitepaper": "MOV Whitepaper",
+  "nav_bystack_wallet": "Bystack Wallet",
+  "nav_bytom_wallet": "Bytom Wallet",
 
   "home_slide_feature_part1_title": "Intelligent",
   "home_slide_feature_part1_des": "Consensus algorithm promotes AI techniques, calculation power actually using.",

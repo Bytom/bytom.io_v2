@@ -27,6 +27,11 @@
   "nav_subscribe": "提交",
   "nav_subscribe_success": "* 感谢提交.",
   "nav_subscribe_fail": "*请输入正确的邮箱地址.",
+  "nav_bystack_home": "Bystack 官网",
+  "nav_bystack_bp_node": "节点招募",
+  "nav_bystack_mov_whitepaper": "MOV 白皮书",
+  "nav_bystack_wallet": "Bystack 钱包",
+  "nav_bytom_wallet": "比原链钱包",
 
   "home_slide_feature_part1_title": "智能共识",
   "home_slide_feature_part1_des": "共识机制引入新型POW算法，可为深度学习提供硬件加速服务。",
