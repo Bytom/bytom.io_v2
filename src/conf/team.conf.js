@@ -77,15 +77,15 @@ export default {
           {type: 'email', link: 'jinl@8btc.com'},
         ],
       },
-      {
-        name: <Msg id="team_member_myy" />,
-        position: <Msg id="team_member_dev_title" />,
-        img: img_mayy,
-        contact: [
-          {type: 'linkedin', link: 'https://www.linkedin.com/in/%E8%80%80%E8%80%80-%E9%A9%AC-596414132/'},
-          // {type: 'email', link: ''},
-        ],
-      },
+      // {
+      //   name: <Msg id="team_member_myy" />,
+      //   position: <Msg id="team_member_dev_title" />,
+      //   img: img_mayy,
+      //   contact: [
+      //     {type: 'linkedin', link: 'https://www.linkedin.com/in/%E8%80%80%E8%80%80-%E9%A9%AC-596414132/'},
+      //     // {type: 'email', link: ''},
+      //   ],
+      // },
       {
         name: <Msg id="team_member_ys" />,
         position: <Msg id="team_member_dev_title" />,
