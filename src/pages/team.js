@@ -77,6 +77,7 @@ const Head = css.div`
 const ContWrap = css.div`
   width: 100%;
   padding: 72px 0 30px;
+  background-color: #f8f8f8;
   @media (max-width: 640px) {
     padding: 36px 0 15px;
   }

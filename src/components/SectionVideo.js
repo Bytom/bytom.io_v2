@@ -12,6 +12,7 @@ const Wrap = css.div`
   height: 520px;
   padding: 100px 0;
   position: relative;
+  box-sizing: content-box;
   background: #f8f8f8 url(${img_bg}) center top / cover no-repeat;
   @media (max-width: 640px) {
     padding: 30px 16px;

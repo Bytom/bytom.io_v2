@@ -55,6 +55,7 @@ const BannerWrap = css.div`
 `;
 const TechWrap = css.div`
   padding: 20px 0;
+  background-color: #f8f8f8;
 `;
 const TabsCont = css.div`
   display: flex;

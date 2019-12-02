@@ -42,6 +42,7 @@ const BannerWrap = css.div`
       font-size: 54px;
       font-weight: bold;
       line-height: 1em;
+      color: #fff;
     }
     p{
       margin-top: 30px;

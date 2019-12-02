@@ -23,6 +23,7 @@ const Cont = css.div`
     font-weight: bold;
     padding-top: 165px;
     line-height: 72px;
+    color: #fff;
     span{
       color: #257BF2;
     }

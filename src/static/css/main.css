@@ -112,7 +112,7 @@
 }
 
 html {
-  font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -121,7 +121,10 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
   background-color: #f8f8f8;
-  font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6, p, ul{
+  margin-bottom: 0;
 }
 @media (max-width: 640px) {
   body{
