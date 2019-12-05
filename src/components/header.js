@@ -121,7 +121,7 @@ const MobileNav = css.ul`
   top: 60px;
   z-index: 99;
   ${props => (props.active ? 'right: 0;' : 'display: none;')}
-  width: 120px;
+  width: 140px;
   transition: all 0.3s ease-out;
 `;
 const MobileNavItem = css.li`
