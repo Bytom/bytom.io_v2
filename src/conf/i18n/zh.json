@@ -9,6 +9,8 @@
   "nav_wallet": "钱包",
   "nav_dapp": "BApp",
   "nav_exp": "浏览器",
+  "nav_exp_bytom": "Bytom 浏览器",
+  "nav_exp_vapor": "Vapor 浏览器",
   "nav_bp_node": "节点招募",
   "nav_blog": "博客",
   "nav_about": "关于",
@@ -30,7 +32,7 @@
   "nav_bystack_home": "Bystack官网",
   "nav_bystack_bp_node": "节点招募",
   "nav_bystack_mov_whitepaper": "MOV白皮书",
-  "nav_bystack_wallet": "Bystack钱包",
+  "nav_bystack_wallet": "侧链钱包",
   "nav_bytom_wallet": "比原链钱包",
 
   "home_slide_feature_part1_title": "智能共识",

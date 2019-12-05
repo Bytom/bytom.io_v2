@@ -18,16 +18,12 @@ export default {
     {
       name: 'Bystack',
       href: 'https://www.bystack.com/',
-      children: [
-        {
-          name: <Msg id="nav_bystack_home" />,
-          href: 'https://www.bystack.com/'
-        },
-        {
-          name: <Msg id="nav_bp_node" />,
-          href: 'https://www.bystack.com/node/detail'
-        },
-      ]
+      // children: [
+      //   {
+      //     name: <Msg id="nav_bystack_home" />,
+      //     href: 'https://www.bystack.com/'
+      //   },
+      // ]
     },
     {
       name: "MOV",
@@ -35,8 +31,8 @@ export default {
         {
           name: <Msg id="nav_bystack_mov_whitepaper" />,
           href: {
-            zh: 'https://www.bystack.com/MOV_WhitePaper.pdf',
-            en: 'https://www.bystack.com/MOV_WhitePaper_En.pdf',
+            zh: 'https://cdn.bytom.io/res/MOV_WhitePaper.pdf',
+            en: 'https://cdn.bytom.io/res/MOV_WhitePaper_En.pdf',
           }
         },
       ]
@@ -65,7 +61,20 @@ export default {
     },
     {
       name: <Msg id="nav_exp" />,
-      href: 'https://blockmeta.com',
+      children: [
+        {
+          name: <Msg id="nav_exp_bytom" />,
+          href: 'https://blockmeta.com',
+        },
+        {
+          name: <Msg id="nav_exp_vapor" />,
+          href: 'https://vapor.blockmeta.com',
+        },
+      ]
+    },
+    {
+      name: <Msg id="nav_bp_node" />,
+      href: '/node/detail',
     },
     {
       name: <Msg id="nav_blog" />,

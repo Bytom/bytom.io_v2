@@ -9,7 +9,9 @@
   "nav_wallet": "Wallet",
   "nav_dapp": "DApp",
   "nav_exp": "Explorer",
-  "nav_bp_node": "Bystack BP",
+  "nav_exp_bytom": "Bytom Explorer",
+  "nav_exp_vapor": "Vapor Explorer",
+  "nav_bp_node": "Vapor BP",
   "nav_blog": "Blog",
   "nav_about": "About",
   "nav_aboutus": "About",
@@ -30,7 +32,7 @@
   "nav_bystack_home": "Bystack Homepage",
   "nav_bystack_bp_node": "Bystack BP",
   "nav_bystack_mov_whitepaper": "MOV Whitepaper",
-  "nav_bystack_wallet": "Bystack Wallet",
+  "nav_bystack_wallet": "Sidechain Wallet",
   "nav_bytom_wallet": "Bytom Wallet",
 
   "home_slide_feature_part1_title": "Intelligent",
@@ -236,7 +238,7 @@
   "nav_doc": "Developer Center",
   "nav_explorer": "Explorer",
 
-  "node_home_title": "Block Producer Recruitment",
+  "node_home_title": "Bytom Sidechain Block Producer",
   "home_sub_title": "Officially Launches",
   "home_btn_apply": "Apply Now",
   "home_btn_vote": "Vote Now",
