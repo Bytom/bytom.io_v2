@@ -4,7 +4,7 @@ export default {
       list: [{
           img: require('../images/eco/1-bycoin.png'),
           title: 'Bycoin',
-          link: 'https://www.bystack.com/wallet',
+          link: 'https://blockmeta.com/wallet',
         },
         {
           img: require('../images/eco/1-byone.png'),

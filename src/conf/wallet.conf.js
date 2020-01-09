@@ -87,7 +87,7 @@ export default {
     {
       img: img_bycoin,
       title: <Msg id="wallet_mobile_bycoin" />,
-      link: 'https://www.bystack.com/wallet',
+      link: 'https://blockmeta.com/wallet',
       des: <Msg id="wallet_mobile_bycoin_des" />
     },
     {

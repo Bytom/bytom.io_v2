@@ -47,7 +47,7 @@ export default {
         },
         {
           name: <Msg id="nav_bystack_wallet" />,
-          href: 'https://www.bystack.com/wallet'
+          href: 'https://blockmeta.com/wallet'
         },
       ]
     },
