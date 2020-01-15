@@ -35,6 +35,13 @@ export default {
             en: 'https://cdn.bytom.io/res/MOV_WhitePaper_En.pdf',
           }
         },
+        {
+          name: <Msg id="nav_bystack_mov_stable_whitepaper" />,
+          href: {
+            zh: 'http://cdn.bytom.io/res/MOV-Stable-ZH.pdf',
+            en: 'http://cdn.bytom.io/res/MOV-Stable-EN.pdf',
+          }
+        },
       ]
     },
     {
