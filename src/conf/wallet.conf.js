@@ -22,30 +22,30 @@ export default {
       icon: <i className="iconfont icon--macOS"></i>,
       title: 'Bytom Wallet',
       des: 'for macOS',
-      version: 'V 1.0.10',
+      version: 'V 1.1.0',
       links: [
         null,
-        {title: <Msg id="wallet_list_btn_download" />, href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71837/bytom-wallet-desktop-1.0.10-mac.zip'}
+        {title: <Msg id="wallet_list_btn_download" />, href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/72322/bytom-wallet-desktop-1.1.0-mac.zip'}
       ]
     },
     {
       icon: <i style={{color: '#0079D7'}} className="iconfont icon--windows"></i>,
       title: 'Bytom Wallet',
       des: 'for Wins',
-      version: 'V 1.0.10',
+      version: 'V 1.1.0',
       links: [
-        {title: 'Win32', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71837/bytom-wallet-desktop-1.0.10-win-ia32.zip'},
-        {title: 'Win64', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71837/bytom-wallet-desktop-1.0.10-win-x64.zip'},
+        {title: 'Win32', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/72322/bytom-wallet-desktop-1.1.0-win-ia32.zip'},
+        {title: 'Win64', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/72322/bytom-wallet-desktop-1.1.0-win-x64.zip'},
       ]
     },
     {
       icon: <img src={img_icon_linux} width="23" style={{verticalAlign: '-5px'}} />,
       title: 'Bytom Wallet',
       des: 'for Linux',
-      version: 'V 1.0.10',
+      version: 'V 1.1.0',
       links: [
-        {title: 'Linux32', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71837/bytom-wallet-desktop-1.0.10-linux-ia32.zip'},
-        {title: 'Linux64', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/71837/bytom-wallet-desktop-1.0.10-linux-x64.zip'},
+        {title: 'Linux32', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/72322/bytom-wallet-desktop-1.1.0-linux-ia32.zip'},
+        {title: 'Linux64', href: 'https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/72322/bytom-wallet-desktop-1.1.0-linux-x64.zip'},
       ]
     },
     {
@@ -54,8 +54,8 @@ export default {
       des: '',
       version: '',
       links: [
-        {title: 'zip', href: 'https://github.com/Bytom/bytom/archive/v1.0.10.zip'},
-        {title: 'tar.gz', href: 'https://github.com/Bytom/bytom/archive/v1.0.10.tar.gz'},
+        {title: 'zip', href: 'https://github.com/Bytom/bytom/archive/v1.1.0.zip'},
+        {title: 'tar.gz', href: 'https://github.com/Bytom/bytom/archive/v1.1.0.tar.gz'},
       ]
     },
   ],
@@ -130,11 +130,11 @@ export default {
     title: [<Msg id="wallet_list_version" />, <Msg id="wallet_list_files" />, <><Msg id="wallet_list_md5" />(MD5)</>],
     width: [null, null, 200],
     data: [
-      ['Bytom Wallet for macOS v1.0.10', 'bytom-wallet-desktop-1.0.10-mac.zip', 'faa36671fc843d3bf1e2fd40792e5043'],
-      ['Bytom Wallet for Win 32 v1.0.10', 'bytom-wallet-desktop-1.0.10-win-ia32.zip	', 'fc76b3af6102d38dc0e2873374d3689a'],
-      ['Bytom Wallet for Win 64 v1.0.10', 'bytom-wallet-desktop-1.0.10-win-x64.zip', '9d3b648f2a42e19ff93d03e0e4a85cb0'],
-      ['Bytom Wallet for Linux 32 v1.0.10', 'bytom-wallet-desktop-1.0.10-linux-ia32.zip', '965b011a7b77f0ef99ff2e7fdf7d9d81'],
-      ['Bytom Wallet for Linux 64 v1.0.10', 'bytom-wallet-desktop-1.0.10-linux-x64.zip', '3aad5deab5be92d60a9e1d313762a53b'],
+      ['Bytom Wallet for macOS v1.1.0', 'bytom-wallet-desktop-1.1.0-mac.zip', 'b020ab2d3f36f48c9e46daf04e6892c2'],
+      ['Bytom Wallet for Win 32 v1.1.0', 'bytom-wallet-desktop-1.1.0-win-ia32.zip	', '42970d9d7f9b7934d8af88ab2d551f86'],
+      ['Bytom Wallet for Win 64 v1.1.0', 'bytom-wallet-desktop-1.1.0-win-x64.zip', '61284c30301d5106a534f2706ce25794'],
+      ['Bytom Wallet for Linux 32 v1.1.0', 'bytom-wallet-desktop-1.1.0-linux-ia32.zip', 'd4736fdfea093e75006e0bbd2d74b757'],
+      ['Bytom Wallet for Linux 64 v1.1.0', 'bytom-wallet-desktop-1.1.0-linux-x64.zip', '2c6e5b7b115c54302a976df574de30a8'],
     ],
     footer: <a target="_blank" href="https://github.com/Bytom/bytom/releases"><Msg id="wallet_list_more" /> &gt;&gt;</a>
   },
@@ -142,7 +142,7 @@ export default {
     title: [<Msg id="wallet_list_file" />, <Msg id="wallet_list_height" />, <Msg id="wallet_list_size" />, <><Msg id="wallet_list_md5" />(MD5)</>, <Msg id="wallet_list_update" />, <Msg id="wallet_list_link" />],
     width: [280, 110, 150, 350, 260],
     data: [
-      ['191025-Update.db.zip', '327881', '570.69MB', '57A0B0CBE68B2B73CCA921454B320D2C', '2019-10-25 7:50:00 (GMT+8)', <a target="_blank" href="https://sourceforge.net/projects/bytomblockchain/files/core.db/191025-Update.db.zip"><Msg id="wallet_list_btn_download" /></a>],
+      ['200206-Update.db.zip', '388255', '659MB', '774099a7e5cbca04d792bb30832ef16d', '2020-02-06 18:00:00 (GMT+8)', <a target="_blank" href="https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/72324/200206-Update.db.zip"><Msg id="wallet_list_btn_download" /></a>],
     ],
   },
 };
