@@ -201,9 +201,9 @@ export default {
           link: 'https://www.rightbtc.com/trade/BTM_BTC',
         },
         {
-          img: require('../images/eco/4-FCoin.png'),
-          title: 'FCoin',
-          link: 'https://exchange.fcoin.com/ex/main/btm-usdt',
+          img: require('../images/eco/4-mxc.png'),
+          title: 'MXC',
+          link: 'https://www.mxc.com/trade/easy#BTM_USDT',
         },
         {
           img: require('../images/eco/4-LBank.png'),
