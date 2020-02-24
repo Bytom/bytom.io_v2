@@ -358,6 +358,64 @@
   "modal_web_step_4_name": "BP name：",
   "modal_web_step_4_vote": "Votes：",
   "modal_web_submit": "View Tutorial",
-  "modal_vote_tips": "Early-bird voting has closed, please download Bycoin or Vapor/Bytom Desktop Wallet to vote."
+  "modal_vote_tips": "Early-bird voting has closed, please download Bycoin or Vapor/Bytom Desktop Wallet to vote.",
+
+
+  "bounty_vision_title": "Vision",
+  "bounty_vision_des": "As part of our commitment to promoting the Bytom ecosystem, we offer a comprehensive grants program focused on funding software and tools , research and technical education related to Bytom.",
+  "bounty_btn_apply": "Apply now",
+
+  "bounty_step_1_title": "Step 1",
+  "bounty_step_1_des": "Determine the scope of your project",
+  "bounty_step_2_title": "Step 2",
+  "bounty_step_2_des": "Apply",
+  "bounty_step_3_title": "Step 3",
+  "bounty_step_3_des": "Initial evaluation",
+  "bounty_step_4_title": "Step 4",
+  "bounty_step_4_des": "Interview",
+  "bounty_step_5_title": "Step 5",
+  "bounty_step_5_des": "Final decision",
+
+  "bounty_list_title": "Bounty Task List",
+  "bounty_list_part_1_title": "Software and Tools",
+  "bounty_list_part_1_1": "Sidechain Vapor Multilingual SDK (Java, C / C ++, Python ...)",
+  "bounty_list_part_1_2": "Asset cross-chain (BTC, ETH cross-chain), Atomic swaps",
+  "bounty_list_part_1_3": "Oracle",
+  "bounty_list_part_1_4": "Hardware wallet integration",
+  "bounty_list_part_1_5": "Sidechain centralized node services (similar to infrua)",
+  "bounty_list_part_1_6": "Sidechain Bapp integrated development environment (similar to remix)",
+  "bounty_list_part_1_7": "Bapp development",
+  "bounty_list_part_1_7_1": "1. Defi",
+  "bounty_list_part_1_7_2": "2. Traceability",
+  "bounty_list_part_1_7_3": "3. Game",
+  "bounty_list_part_1_7_4": "4. Tool",
+
+  "bounty_list_part_2_title": "Academic Research",
+  "bounty_list_part_2_1": "Bottom layer research (consensus algorithms, UTXO models, etc.)",
+  "bounty_list_part_2_2": "Cryptography (MPC, zkrollup, etc.)",
+  "bounty_list_part_2_3": "Protocol research (cross-chain protocols, layer 2 protocols, etc.)",
+  "bounty_list_part_2_4": "Analysis of existing protocols",
+  "bounty_list_part_2_5": "Security research (cross-chain gateway security research, etc.)",
+
+  "bounty_list_part_3_title": "Education and Documentation",
+  "bounty_list_part_3_1": "Ntroduction videos/articles (Bytom main chain, side chain, Bystack, MOV, etc.)",
+  "bounty_list_part_3_2": "Technical videos/articles (Bytom underlying protocol, consensus algorithm, network, smart contract, and cross-chain protocol for system introduction)",
+  "bounty_list_part_3_3": "Translation",
+
+  "bounty_banner_subtitle": "Show me your tech Win up to 100,000 USD",
+
+  "bounty_faq_title": "FAQ",
+  "bounty_faq_1_q": "1. How do I apply for a bounty task?",
+  "bounty_faq_1_a": "As long as you have good ideas or want to try the tasks in the bounty list, you can apply at any time.",
+  "bounty_faq_2_q": "2. What are the requirements for applying for a bounty?",
+  "bounty_faq_2_a": "The developed project needs to have a positive impact on the original ecology and comply with local laws and regulations Refer to the list of requirements for the bounty task for the scope of the project Generally required projects to apply for open source or part of open source.",
+  "bounty_faq_3_q": "3. Does the scope of the project have to meet the specified requirements?",
+  "bounty_faq_3_a": "Not necessarily. If you have good ideas, you can consult with us at any time. The requirements list is just for reference.",
+  "bounty_faq_4_q": "4. What’s the average amount of the bounty?",
+  "bounty_faq_4_a": "It depends on the workload such as the personnel and working days needed. No more than 100,000 USD for each project.",
+  "bounty_faq_5_q": "5. How is the bounty given to participants?",
+  "bounty_faq_5_a": "The bounty will be given in batches in BTM tokens according to the project’s roadmap.",
+  "bounty_faq_6_q": "6. What can participants get in addition to the fund?",
+  "bounty_faq_6_a": "Participants have priority to attend various events hosted by Bytom over the world and to be invited as a speaker. Participants have access to the latest Bytom swags and media exposure opportunity."
 
 }

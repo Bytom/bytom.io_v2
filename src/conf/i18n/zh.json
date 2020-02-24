@@ -361,5 +361,64 @@
   "nav_atlas_wallet": "钱包下载",
   "nav_atlas_node": "节点竞选",
   "modal_web_submit": "查看教程",
-  "modal_vote_tips": "早鸟投票已结束，请使用Bycoin App或Vapor/Bytom Desktop Wallet进行正式投票。"
+  "modal_vote_tips": "早鸟投票已结束，请使用Bycoin App或Vapor/Bytom Desktop Wallet进行正式投票。",
+
+
+  "bounty_vision_title": "愿景",
+  "bounty_vision_des": "作为推广比原链，壮大比原链生态的重要组成部分，我们推出一项全面的赏金资助计划，主要专注于基于比原链和生态的软件开发，学术研究和教育推广。",
+  "bounty_btn_apply": "现在申请",
+
+  "bounty_step_1_title": "流程一",
+  "bounty_step_1_des": "确定你项目的工作范围",
+  "bounty_step_2_title": "流程二",
+  "bounty_step_2_des": "申请",
+  "bounty_step_3_title": "流程三",
+  "bounty_step_3_des": "初审",
+  "bounty_step_4_title": "流程四",
+  "bounty_step_4_des": "复审",
+  "bounty_step_5_title": "流程五",
+  "bounty_step_5_des": "决定",
+
+  "bounty_list_title": "赏金列表",
+  "bounty_list_part_1_title": "软件和工具",
+  "bounty_list_part_1_1": "侧链Vapor多语言SDK（Java,C/C++,Python ......）",
+  "bounty_list_part_1_2": "使用原子互换的方式（Atomic swaps）的资产跨链（BTC，ETH跨链）",
+  "bounty_list_part_1_3": "Oracle(预言机)",
+  "bounty_list_part_1_4": "硬件钱包集成",
+  "bounty_list_part_1_5": "侧链中心化的节点服务（类似于infrua）",
+  "bounty_list_part_1_6": "侧链Bapp集成开发环境（类似于remix）",
+  "bounty_list_part_1_7": "Bapp开发",
+  "bounty_list_part_1_7_1": "1. Defi",
+  "bounty_list_part_1_7_2": "2. 溯源",
+  "bounty_list_part_1_7_3": "3. 游戏",
+  "bounty_list_part_1_7_4": "4. 工具",
+
+  "bounty_list_part_2_title": "学术研究",
+  "bounty_list_part_2_1": "底层研究（共识算法，UTXO模型等）",
+  "bounty_list_part_2_2": "密码学（MPC、zkrollup等）",
+  "bounty_list_part_2_3": "协议研究（跨链协议，二层协议等）",
+  "bounty_list_part_2_4": "现有协议分析",
+  "bounty_list_part_2_5": "安全研究（跨链网关安全研究等）",
+
+  "bounty_list_part_3_title": "教育与文档",
+  "bounty_list_part_3_1": "科普类视频/文章（对比原主链，侧链，Bystack，MOV等进行通俗介绍）",
+  "bounty_list_part_3_2": "技术类视频/文章（对比原底层协议，共识算法，网络，智能合约，跨链协议进行系统介绍）",
+  "bounty_list_part_3_3": "翻译",
+
+  "bounty_banner_subtitle": "加入赏金计划赢取 100,000 USD",
+
+  "bounty_faq_title": "FAQ",
+  "bounty_faq_1_q": "1、我怎么申请赏金任务？",
+  "bounty_faq_1_a": "只要你有好的 idea 或者想要尝试赏金列表中的任务，可以随时进行申请。",
+  "bounty_faq_2_q": "2、申请赏金需要什么条件？",
+  "bounty_faq_2_a": "开发的项目需要对比原生态产生积极影响，并遵照各地的法律法规 项目的选题范围参考赏金任务的需求列表 一般要求申请的项目需要开源或者部分开源。",
+  "bounty_faq_3_q": "3、项目的范围必须符合指定的需求么？",
+  "bounty_faq_3_a": "不一定，如果你有好的 idea，可以随时跟我们进行协商，需求列表只是提供参考。",
+  "bounty_faq_4_q": "4、赏金的金额一般是多少？",
+  "bounty_faq_4_a": "视每个项目的工作量而定，我们评估赏金也是根据工作人天进行评估，每个项目原则上最多不超过10万美元。",
+  "bounty_faq_5_q": "5、赏金如何发放？",
+  "bounty_faq_5_a": "根据项目 Roadmap 分阶段进行发放，赏金以 BTM Token 的形式发放。",
+  "bounty_faq_6_q": "6、除了资金之外，项目还可以获得什么？",
+  "bounty_faq_6_a": "项目的成员可以优先参与比原链在全球举办的各种活动，并受邀成为嘉宾进行演讲，有机会在社区和全媒体曝光自己的项目，还有各类定制的礼物。"
+
 }
