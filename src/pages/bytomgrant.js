@@ -313,6 +313,7 @@ function Bounty({ intl }) {
                 <div key={index}>
                   <h2>{item.title}</h2>
                   <p>{item.cont}</p>
+                  { index === 0 && <Button style={{ marginTop: 15 }}><Msg id="bounty_btn_apply" /></Button>}
                 </div>
               ))
             }
