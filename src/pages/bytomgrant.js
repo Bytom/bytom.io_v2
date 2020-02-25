@@ -13,12 +13,21 @@ import img_banner_coin from '../images/bounty/banner-coin.png';
 import img_coins from '../images/bounty/coin.png';
 import img_sub_banner from '../images/bounty/banner-2.png';
 
+import img_m_banner_cn from '../images/bounty/m/banner-cn.png';
+import img_m_banner_en from '../images/bounty/m/banner-en.png';
+import img_m_banner_coin from '../images/bounty/m/banner-coin.png';
+import img_m_sub_banner from '../images/bounty/m/banner-2.png';
 
 const Banner = css.div`
   width: 1360px;
   height: 450px;
   margin: 0 auto;
   position: relative;
+  background: #fafafa;
+  @media (max-width: 640px) {
+    width: 100%;
+    height: 510px;
+  }
 `;
 const BannerCont = css.div`
   width: 1240px;
@@ -28,7 +37,7 @@ const BannerCont = css.div`
   @media (max-width: 640px) {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 16px;
+    background: url(${props => props.lang === 'en' ? img_m_banner_en : img_m_banner_cn}) top center / 100% no-repeat;
   }
 `;
 const BannerFront = css.div`
@@ -38,15 +47,17 @@ const BannerFront = css.div`
   top: 0;
   left: 0;
   background: url(${img_banner_coin}) top center / 100% no-repeat;
+  @media (max-width: 640px) {
+    background: url(${img_m_banner_coin}) top center / 100% no-repeat;
+  }
 `;
 const ContWrap = css.div`
   width: 100%;
   padding: 42px 0 100px;
   background-color: #f8f8f8;
   @media (max-width: 640px) {
-    padding: 36px 0 15px;
+    padding: 36px 0 60px;
   }
-
 `;
 const Vision = css.div`
   width: 1240px;
@@ -69,6 +80,16 @@ const Vision = css.div`
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+  }
+  @media (max-width: 640px) {
+    width: 100%;
+    padding: 0 16px;
+    &>h1{ font-size: 36px; }
+    &>p{ font-size: 16px; width: 100%; }
+    &>ul{
+      flex-direction: column;
+      margin-top: 40px;
+    }
   }
 `;
 const StepItem = css.li`
@@ -103,6 +124,21 @@ const StepItem = css.li`
     left: 0;
     ${props => props.pos ? 'top: 0;' : 'bottom: 0;'}
   }
+  @media (max-width: 640px) {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    &>div{
+      width: auto;
+      height: 100px;
+      left: 30px;
+      h1{ font-size: 16px; }
+      p{ font-size: 14px; }
+    }
+    &>img{
+      top: 0 !important;
+    }
+  }
 `;
 const Button = css.a`
   display: inline-block;
@@ -119,6 +155,12 @@ const Button = css.a`
     background: linear-gradient(90deg, #004EE4 0%, #2F76FF 100%);
     border: none;
     color: #fff;
+  }
+  @media (max-width: 640px) {
+    padding: 0 20px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
   }
 `;
 const BountyListWrap = css.div`
@@ -178,6 +220,27 @@ const BountyList = css.div`
         }
         li:nth-child(1), li:nth-child(4), li:nth-child(7) {
           margin-left: 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 640px) {
+    width: 100%;
+    padding: 40px 20px;
+    flex-direction: column;
+    &>h1{ font-size: 36px; margin-bottom: 40px; }
+    &>section {
+      padding: 0;
+      &>div {
+        clear: both;
+        ul{
+          li { 
+            width: 100%; 
+            min-height: 125px;
+            margin: 20px 0 0 0; 
+            h3{ font-size: 16px; }
+            p{ font-size: 14px; }
+          }
         }
       }
     }
