@@ -143,7 +143,7 @@ const MobileInfo = css.section`
   }
 `;
 
-const Footer = ({ siteTitle }) => {
+const Footer = ({ siteTitle, disableSubnav }) => {
 
   const [email, handleChange] = useState('');
   const [isSubscribed, toggleSubscribe] = useState(false);
@@ -176,7 +176,7 @@ const Footer = ({ siteTitle }) => {
 
   return (
     <>
-      <Wrap>
+      {!disableSubnav && <Wrap>
         <Cont>
           {
             links.map((item, index) => (
@@ -213,7 +213,7 @@ const Footer = ({ siteTitle }) => {
             </MobileInfo>
           </Item>
         </Cont>
-      </Wrap>
+      </Wrap>}
       <Copy>Copyright ©2020 bytom.io</Copy>
     </>
   )

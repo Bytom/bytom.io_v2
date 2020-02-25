@@ -13,7 +13,7 @@ const Wrap = css.div`
   width: 100%;
 `;
 
-const Layout = ({ children, light = false }) => (
+const Layout = ({ children, light = false, disableSubnav = false }) => (
   <IntlContextConsumer>
     {
       () => (
@@ -22,7 +22,7 @@ const Layout = ({ children, light = false }) => (
           <Wrap>
             {children}
           </Wrap>
-          <Footer />
+          <Footer disableSubnav={disableSubnav} />
         </>
       )
     }

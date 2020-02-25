@@ -243,7 +243,7 @@ const Faq = css.div`
 function Bounty({ intl }) {
   const lang = intl.locale;
   return (
-    <Layout light>
+    <Layout light disableSubnav>
       <SEO title={{zh: '赏金计划', en: 'Bytom Grant'}} />
       <Banner>
         <BannerCont lang={lang} style={{position: 'relative'}}>
