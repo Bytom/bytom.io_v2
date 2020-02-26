@@ -29,6 +29,7 @@
     "prop-types": "^15.7.2",
     "query-string": "^6.4.2",
     "querystringify": "^2.1.1",
+    "rc-scroll-anim": "^2.7.4",
     "react": "^16.8.6",
     "react-content-loader": "^4.2.1",
     "react-dom": "^16.8.5",

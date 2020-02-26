@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 import css from 'styled-components';
+import { Parallax } from 'rc-scroll-anim';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -42,7 +43,7 @@ const Banner = css.div`
     width: 100%;
     height: 510px;
     &>img{
-      bottom: 90px;
+      bottom: 70px;
       left: 0;
     }
   }
@@ -58,7 +59,7 @@ const BannerCont = css.div`
     background: url(${props => props.lang === 'en' ? img_m_banner_en : img_m_banner_cn}) top center / 100% no-repeat;
   }
 `;
-const BannerFront = css.div`
+const BannerFront = css(Parallax)`
   width: 100%;
   height: 100%;
   position: absolute;
@@ -130,12 +131,6 @@ const SubBannerWrap = css.div`
   height: 280px;
   position: relative;
   background: url(${img_sub_banner}) top center / 100% 280px no-repeat;
-  &>img{
-    position: absolute;
-    top: -30px;
-    width: 100%;
-    height: 340px;
-  }
   &>h1 {
     width: 320px;
     margin: 0 auto;
@@ -154,6 +149,16 @@ const SubBannerWrap = css.div`
     }
   }
 `;
+const SubBannerFront = css(Parallax)`
+  width: 100%;
+  height: 340px;
+  position: absolute;
+  top: -50px;
+  background: url(${img_coins}) top center / 100% 340px no-repeat;
+  @media (max-width: 640px) {
+    display: none;
+  }
+`;
 
 function Bounty({ intl }) {
   const lang = intl.locale;
@@ -162,7 +167,10 @@ function Bounty({ intl }) {
       <SEO title={{zh: '赏金计划', en: 'Bytom Grant'}} />
       <Banner>
         <BannerCont lang={lang} style={{position: 'relative'}} />
-        <BannerFront />
+        <BannerFront
+          animation={{ y: 30, playScale: [0.9, 1.3] }}
+          style={{ transform: 'translateY(0px)'}}
+        />
         <img src={img_anima} alt=""/>
       </Banner>
       <ContWrap>
@@ -175,7 +183,10 @@ function Bounty({ intl }) {
       </ContWrap>
       <BountyList />
       <SubBannerWrap>
-        <img src={img_coins} alt=""/>
+        <SubBannerFront
+          animation={{ y: 30, playScale: [0.4, 1] }}
+          style={{ transform: 'translateY(0px)'}}
+        />
         <Msg id="bounty_banner_subtitle" tagName="h1" />
       </SubBannerWrap>
       <Faq apply_link={_conf.apply_link} />

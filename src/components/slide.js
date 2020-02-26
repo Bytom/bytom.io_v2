@@ -74,6 +74,9 @@ const Streamer = css.a`
     left: 0;
     bottom: 0;
   }
+  @media (max-width: 640px) {
+    display: none;
+  }
 `;
 
 const Slide = ({ intl }) => (
