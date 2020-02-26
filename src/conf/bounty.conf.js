@@ -9,6 +9,7 @@ import icon_step_4 from '../images/bounty/img - cube - 4.png'
 import icon_step_5 from '../images/bounty/img - cube - 5.png'
 
 export default {
+  apply_link: 'http://bytomgrant.mikecrm.com/1PBhAyH',
   steps: [
     {
       title: <Msg id="bounty_step_1_title" />,

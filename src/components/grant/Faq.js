@@ -87,7 +87,7 @@ const Button = css.a`
   }
 `;
 
-function Faq () {
+function Faq ({ apply_link }) {
   return (
     <FaqWrap>
         <Wrap>
@@ -98,7 +98,7 @@ function Faq () {
                 <div key={index}>
                   <h2>{item.title}</h2>
                   <p>{item.cont}</p>
-                  { index === 0 && <Button style={{ marginTop: 15 }}><Msg id="bounty_btn_apply" /></Button>}
+                  { index === 0 && <Button href={apply_link} target="_blank" style={{ marginTop: 15 }}><Msg id="bounty_btn_apply" /></Button>}
                 </div>
               ))
             }

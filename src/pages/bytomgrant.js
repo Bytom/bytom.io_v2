@@ -154,7 +154,7 @@ function Bounty({ intl }) {
         <Vision>
           <Msg id="bounty_vision_title" tagName="h1" />
           <Msg id="bounty_vision_des" tagName="p" />
-          <Button href="">Apply Now</Button>
+          <Button target="_blank" href={_conf.apply_link}>Apply Now</Button>
           <Steps />
         </Vision>
       </ContWrap>
@@ -163,7 +163,7 @@ function Bounty({ intl }) {
         <img src={img_coins} alt=""/>
         <Msg id="bounty_banner_subtitle" tagName="h1" />
       </SubBannerWrap>
-      <Faq />
+      <Faq apply_link={_conf.apply_link} />
     </Layout>
   )
 };
