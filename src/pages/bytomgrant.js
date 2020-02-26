@@ -16,6 +16,7 @@ import img_banner_en from '../images/bounty/banner-en.png';
 import img_banner_coin from '../images/bounty/banner-coin.png';
 import img_coins from '../images/bounty/coin.png';
 import img_sub_banner from '../images/bounty/banner-2.png';
+import img_anima from '../images/bounty/anima.gif';
 
 import img_m_banner_cn from '../images/bounty/m/banner-cn.png';
 import img_m_banner_en from '../images/bounty/m/banner-en.png';
@@ -28,9 +29,21 @@ const Banner = css.div`
   margin: 0 auto;
   position: relative;
   background: #fafafa;
+  &>img{
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    border-radius: 0 0 0 16px;
+  }
   @media (max-width: 640px) {
     width: 100%;
     height: 510px;
+    &>img{
+      bottom: 90px;
+      left: 0;
+    }
   }
 `;
 const BannerCont = css.div`
@@ -149,6 +162,7 @@ function Bounty({ intl }) {
       <Banner>
         <BannerCont lang={lang} style={{position: 'relative'}} />
         <BannerFront />
+        <img src={img_anima} alt=""/>
       </Banner>
       <ContWrap>
         <Vision>
