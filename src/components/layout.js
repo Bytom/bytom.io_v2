@@ -18,8 +18,8 @@ const Layout = ({ children, light = false, disableSubnav = false }) => (
     {
       () => (
         <>
-          <Header light={light} />
-          <Wrap>
+          <Header light={light} disableSubnav={disableSubnav} />
+          <Wrap style={{background: light && disableSubnav ? '#f8f8f8' : 'transparent'}}>
             {children}
           </Wrap>
           <Footer disableSubnav={disableSubnav} />

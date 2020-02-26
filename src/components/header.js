@@ -18,13 +18,13 @@ import img_devcon from '../images/devcon/btn.png';
 const Wrap = css.div`
   width: 100%;
   height: 80px;
-  background-color: ${props => (props.light === 'true' ? '#fff' : '#000')};
+  background-color: ${props => (props.light === 'true' ? props.disableSubnav ? '#f8f8f8' : '#fff' : '#000')};
   @media (max-width: 640px) {
     height: 60px;
   }
 `;
 const Cont = css.div`
-  width: 1280px;
+  width: ${props => props.disableSubnav ? '1240px' : '1280px'};
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -172,7 +172,7 @@ const MobileMenuToggle = css.span`
   }
 `;
 
-const Header = ({ siteTitle, light, intl }) => {
+const Header = ({ siteTitle, light, intl, disableSubnav }) => {
   const [menuStatus, toggleMobileMenu] = useState(false);
   const [langStatus, toggleLangStatus] = useState(false);
 
@@ -196,8 +196,8 @@ const Header = ({ siteTitle, light, intl }) => {
   };
 
   return (
-    <Wrap light={light ? 'true' : 'false'}>
-      <Cont className="clearfix">
+    <Wrap light={light ? 'true' : 'false'} disableSubnav={disableSubnav}>
+      <Cont disableSubnav={disableSubnav} className="clearfix">
         <Logo light={light ? 'true' : 'false'} to="/">
           {' '}
         </Logo>

@@ -25,10 +25,11 @@ import img_m_sub_banner from '../images/bounty/m/banner-2.png';
 
 const Banner = css.div`
   width: 1360px;
-  height: 450px;
+  height: 470px;
   margin: 0 auto;
+  padding-top: 20px;
   position: relative;
-  background: #fafafa;
+  background: #f8f8f8;
   &>img{
     width: 300px;
     height: 60px;
@@ -70,7 +71,7 @@ const BannerFront = css.div`
 `;
 const ContWrap = css.div`
   width: 100%;
-  padding: 42px 0 100px;
+  padding: 55px 0 100px;
   background-color: #f8f8f8;
   @media (max-width: 640px) {
     padding: 36px 0 60px;
