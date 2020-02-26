@@ -3,6 +3,11 @@ import css from 'styled-components';
 import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 
 import img_banner from '../images/Banner-00@2x.png';
+import img_bounty_cn from '../images/bounty/streamer-cn.png';
+import img_bounty_en from '../images/bounty/streamer-en.png';
+import img_anima from '../images/bounty/anima.gif';
+
+import _conf from '../conf/bounty.conf';
 
 const Wrap = css.div`
   width: 100%;
@@ -18,6 +23,7 @@ const Cont = css.div`
   margin: 0 auto;
   color: #fff;
   text-align: center;
+  position: relative;
   h1{
     font-size: 54px;
     font-weight: bold;
@@ -51,6 +57,25 @@ const Cont = css.div`
     }
   }
 `;
+const Streamer = css.a`
+  display: block;
+  width: 1026px;
+  height: 110px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 127px;
+  background: url(${props => props.lang === 'zh' ? img_bounty_cn : img_bounty_en}) left center / 100% no-repeat;
+  &>img{
+    border-radius: 12px 0 0 0;
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+`;
+
 const Slide = ({ intl }) => (
   <Wrap>
     <Cont>
@@ -64,6 +89,7 @@ const Slide = ({ intl }) => (
           </>
         : <><Msg id="home_slide_title_des" tagName="p" /></>
       }
+      <Streamer href={_conf.apply_link} target="_blank" lang={intl.locale} />
     </Cont>
   </Wrap>
 );
