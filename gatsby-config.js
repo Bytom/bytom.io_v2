@@ -50,13 +50,6 @@ module.exports = {
         endpoint: 'https://gmail.us20.list-manage.com/subscribe/post?u=bbafc8ca5070bf12853c712d4&amp;id=e8aa0dac65'
       }
     },
-    // {
-    //   resolve: 'gatsby-source-yuque',
-    //   options: {
-    //     login: 'rainoy',
-    //     repo: 'blog',
-    //   }
-    // },
     {
       resolve: `gatsby-plugin-intl`,
       options: {
@@ -67,8 +60,5 @@ module.exports = {
       }, // import { injectIntl, Link, FormattedMessage as Msg } from "gatsby-plugin-intl"
     },
     'gatsby-plugin-antd',
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 }
