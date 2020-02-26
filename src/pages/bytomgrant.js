@@ -108,7 +108,6 @@ const Button = css.a`
   padding: 0 32px;
   height: 45px;
   line-height: 45px;
-  background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.88);
   text-align: center;
   font-size: 16px;

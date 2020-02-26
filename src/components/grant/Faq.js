@@ -18,9 +18,11 @@ const Wrap = css.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  &>h1{
+  &>section>h1{
     color: #fff;
     font-size: 44px;
+    position: sticky;
+    top: 100px;
   }
   &>div{
     padding-left: 238px;
@@ -91,7 +93,9 @@ function Faq ({ apply_link }) {
   return (
     <FaqWrap>
         <Wrap>
-          <Msg id="bounty_faq_title" tagName="h1"/>
+          <section>
+            <Msg id="bounty_faq_title" tagName="h1"/>
+          </section>
           <div>
             {
               _conf.faq.map((item, index) => (

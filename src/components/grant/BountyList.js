@@ -13,11 +13,15 @@ const Wrap = css.div`
   padding: 100px 0;
   display: flex;
   justify-content: space-between;
-  &>h1 {
-    font-size: 44px;
-    font-weight: bold;
-    line-height: 1.5em;
-    width: 190px;
+  &>div {
+    h1 {
+      font-size: 44px;
+      font-weight: bold;
+      line-height: 1.5em;
+      width: 190px;
+      position: sticky;
+      top: 100px;
+    }
   }
   &>section{
     flex: 1;
@@ -25,19 +29,20 @@ const Wrap = css.div`
     &>div {
       clear: both;
       &:not(:first-child) {
-        padding-top: 80px;
+        padding-top: 60px;
       }
       &>h1{
         font-size: 28px;
         line-height: 1.6em;
         color: rgba(0, 0, 0, 0.88);
         border-bottom: 1px solid #d8d8d8;
-        padding-bottom: 20px;
+        padding: 20px 0;
+        background: #fff;
       }
       &>ul {
         clear: both;
         li{
-          width: 280px;
+          width: 286px;
           min-height: 175px;
           margin: 32px 0 0 32px;
           float: left;
@@ -69,16 +74,18 @@ const Wrap = css.div`
     width: 100%;
     padding: 40px 20px;
     flex-direction: column;
-    &>h1{ font-size: 36px; margin-bottom: 40px; }
+    &>div>h1{ font-size: 36px; margin-bottom: 20px; }
     &>section {
       padding: 0;
       &>div {
         clear: both;
         &:not(:first-child) {
-          padding-top: 40px;
+          padding-top: 20px;
         }
         &>h1{
           font-size: 20px;
+          position: sticky;
+          top: 0;
         }
         ul{
           li { 
@@ -98,12 +105,14 @@ function BountyList() {
   return (
     <BountyListWrap>
       <Wrap>
-        <Msg id="bounty_list_title" tagName="h1" />
+        <div>
+          <Msg id="bounty_list_title" tagName="h1" />
+        </div>
         <section>
           {_conf.task_list.map((item, index) => (
             <div key={index}>
               <h1>{item.title}</h1>
-              <ul>
+              <ul className="clearfix">
                 {item.list.map((task, taskIndex) => (
                   <li key={taskIndex}>
                     <h3>0{taskIndex + 1}</h3>
