@@ -33,7 +33,7 @@ const Wrap = css.div`
         padding-top: 0;
       }
       &>h2{
-        font-size: 18xp;
+        font-size: 18px;
         color: #fff;
       }
       &>p{

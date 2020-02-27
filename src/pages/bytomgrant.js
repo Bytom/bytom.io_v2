@@ -186,7 +186,7 @@ function Bounty({ intl }) {
           animation={{ y: -50, playScale: [0.3, 1] }}
           style={{ transform: 'translateY(0px)'}}
         />
-        <Msg id="bounty_banner_subtitle" tagName="h1" />
+        <Msg id="bounty_banner_subtitle" tagName="h1" values={{br: <br />}} />
       </SubBannerWrap>
       <Faq apply_link={_conf.apply_link} />
     </Layout>
