@@ -63,7 +63,7 @@ const BannerFront = css(Parallax)`
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   background: url(${img_banner_coin}) top center / 100% no-repeat;
   @media (max-width: 640px) {
@@ -107,7 +107,7 @@ const Button = css.a`
   display: inline-block;
   padding: 0 32px;
   height: 45px;
-  line-height: 45px;
+  line-height: 42px;
   border: 1px solid rgba(0, 0, 0, 0.88);
   text-align: center;
   font-size: 16px;
@@ -129,11 +129,11 @@ const SubBannerWrap = css.div`
   width: 100%;
   height: 280px;
   position: relative;
-  background: url(${img_sub_banner}) top center / 100% 280px no-repeat;
+  background: #fff url(${img_sub_banner}) top center / 100% 280px no-repeat;
   &>h1 {
     width: 320px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 40px 0;
     color: #fff;
     font-size: 28px;
     line-height: 1.6em;
@@ -142,7 +142,7 @@ const SubBannerWrap = css.div`
   @media (max-width: 640px) {
     width: 100%;
     height: 230px;
-    background: url(${img_m_sub_banner}) top center / 100% 250px no-repeat;
+    background: #fff url(${img_m_sub_banner}) top center / 100% 250px no-repeat;
     &>img{
       display: none;
     }
@@ -176,7 +176,7 @@ function Bounty({ intl }) {
         <Vision>
           <Msg id="bounty_vision_title" tagName="h1" />
           <Msg id="bounty_vision_des" tagName="p" />
-          <Button target="_blank" href={_conf.apply_link}>Apply Now</Button>
+          <Button target="_blank" href={_conf.apply_link}><Msg id="bounty_btn_apply" /></Button>
           <Steps />
         </Vision>
       </ContWrap>

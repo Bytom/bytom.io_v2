@@ -47,10 +47,10 @@ const Wrap = css.div`
   @media (max-width: 640px) {
     width: 100%;
     flex-direction: column;
-    &>h1{
+    &>section>h1{
       font-size: 36px;
       line-height: 1em;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     &>div{ 
       padding: 0;
@@ -70,7 +70,7 @@ const Button = css.a`
   display: inline-block;
   padding: 0 32px;
   height: 45px;
-  line-height: 45px;
+  line-height: 42px;
   border: 1px solid #fff;
   color: #fff;
   text-align: center;
@@ -84,7 +84,7 @@ const Button = css.a`
   @media (max-width: 640px) {
     padding: 0 20px;
     height: 40px;
-    line-height: 40px;
+    line-height: 36px;
     font-size: 14px;
   }
 `;

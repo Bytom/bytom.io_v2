@@ -57,7 +57,7 @@ const Cont = css.div`
     }
   }
 `;
-const Streamer = css.a`
+const Streamer = css(Link)`
   display: block;
   width: 1026px;
   height: 110px;
@@ -92,7 +92,7 @@ const Slide = ({ intl }) => (
           </>
         : <><Msg id="home_slide_title_des" tagName="p" /></>
       }
-      <Streamer href={_conf.apply_link} target="_blank" lang={intl.locale} />
+      <Streamer to="/bytomgrant" target="_blank" lang={intl.locale} />
     </Cont>
   </Wrap>
 );
