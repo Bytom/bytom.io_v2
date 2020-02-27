@@ -63,7 +63,7 @@ const BannerFront = css(Parallax)`
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 0;
   background: url(${img_banner_coin}) top center / 100% no-repeat;
   @media (max-width: 640px) {
@@ -152,7 +152,7 @@ const SubBannerFront = css(Parallax)`
   width: 100%;
   height: 340px;
   position: absolute;
-  top: -50px;
+  top: -20px;
   background: url(${img_coins}) top center / 100% 340px no-repeat;
   @media (max-width: 640px) {
     display: none;
@@ -167,7 +167,7 @@ function Bounty({ intl }) {
       <Banner>
         <BannerCont lang={lang} style={{position: 'relative'}} />
         <BannerFront
-          animation={{ y: 30, playScale: [0.9, 1.3] }}
+          animation={{ y: -30, playScale: [0.9, 1.3] }}
           style={{ transform: 'translateY(0px)'}}
         />
         <img src={img_anima} alt=""/>
@@ -183,7 +183,7 @@ function Bounty({ intl }) {
       <BountyList />
       <SubBannerWrap>
         <SubBannerFront
-          animation={{ y: 30, playScale: [0.4, 1] }}
+          animation={{ y: -50, playScale: [0.3, 1] }}
           style={{ transform: 'translateY(0px)'}}
         />
         <Msg id="bounty_banner_subtitle" tagName="h1" />
