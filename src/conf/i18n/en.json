@@ -362,7 +362,7 @@
 
 
   "bounty_vision_title": "Vision",
-  "bounty_vision_des": "As part of our commitment to promoting the Bytom ecosystem, we offer a comprehensive grants program focused on funding software and tools , research and technical education related to Bytom.",
+  "bounty_vision_des": "As a part of our commitment to promote the Bytom ecosystem, we offer a comprehensive grants program focusing on funding software and tools, research and technical education aossciated with Bytom.",
   "bounty_btn_apply": "Apply now",
 
   "bounty_step_1_title": "Step 1",
@@ -402,7 +402,7 @@
   "bounty_list_part_3_2": "Technical videos/articles (Bytom underlying protocol, consensus algorithm, network, smart contract, and cross-chain protocol for system introduction)",
   "bounty_list_part_3_3": "Translation",
 
-  "bounty_banner_subtitle": "Show me your tech Win up to 100,000 USD",
+  "bounty_banner_subtitle": "Show me your tech{br}Win up to 100,000 USD",
 
   "bounty_faq_title": "FAQ",
   "bounty_faq_1_q": "1. How do I apply for a bounty task?",
