@@ -196,7 +196,7 @@ const DevPage = ({ location }) => (
     <Tabs
       tab={[
         <Msg id="dev_tab_1" />,
-        <Msg id="dev_tab_2" />,
+        // <Msg id="dev_tab_2" />,
       ]}
       defaultPanel={location.state && location.state.bounty ? 1 : 0}
     >
