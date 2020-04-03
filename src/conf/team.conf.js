@@ -232,15 +232,15 @@ export default {
           {type: 'email', link: ''},
         ],
       },
-      {
-        name: <Msg id="team_member_fmx" />,
-        position: <Msg id="team_member_fmx_title" />,
-        img: img_fanmx,
-        contact: [
-          {type: 'linkin', link: 'https://www.linkedin.com/in/%E9%86%92-%E6%A2%A6-392635175/'},
-          {type: 'email', link: 'fanmx@bytom.io'},
-        ],
-      },
+      // {
+      //   name: <Msg id="team_member_fmx" />,
+      //   position: <Msg id="team_member_fmx_title" />,
+      //   img: img_fanmx,
+      //   contact: [
+      //     {type: 'linkin', link: 'https://www.linkedin.com/in/%E9%86%92-%E6%A2%A6-392635175/'},
+      //     {type: 'email', link: 'fanmx@bytom.io'},
+      //   ],
+      // },
       {},
     ],
   ],
