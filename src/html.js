@@ -10,8 +10,8 @@ export default function HTML(props) {
         <meta name="referrer" content="no-referrer" />
         <meta name="description" content="比原链Bytom是一种多元比特资产的区块链开源交互协议，运行在比原链上的不同类型资产可以通过交互协议进行交换、对赌和基于智能合约的复杂性交互操作。比原链的愿景是利用区块链技术创造多样资产与可编程经济。" />
         <meta name="keywords" content="比原链,Bytom,比原,BTM,区块链,Blockchain,Bystack,Vapor,Tensority,长铗,朗豫,比原链官网" />
-        <link rel="alternate" href="https://bytom.io/zh" hreflang="zh"></link>
-        <link rel="alternate" href="https://bytom.io/en" hreflang="en"></link>
+        <link rel="alternate" href="https://bytom.io/zh" hrefLang="zh"></link>
+        <link rel="alternate" href="https://bytom.io/en" hrefLang="en"></link>
         <meta
           name="viewport"
           content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"

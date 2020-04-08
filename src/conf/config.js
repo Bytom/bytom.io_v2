@@ -27,22 +27,7 @@ export default {
     },
     {
       name: "MOV",
-      children: [
-        {
-          name: <Msg id="nav_bystack_mov_whitepaper" />,
-          href: {
-            zh: 'https://cdn.bytom.io/res/MOV_WhitePaper.pdf',
-            en: 'https://cdn.bytom.io/res/MOV_WhitePaper_En.pdf',
-          }
-        },
-        {
-          name: <Msg id="nav_bystack_mov_stable_whitepaper" />,
-          href: {
-            zh: 'http://cdn.bytom.io/res/MOV-Stable-ZH.pdf',
-            en: 'http://cdn.bytom.io/res/MOV-Stable-EN.pdf',
-          }
-        },
-      ]
+      href: 'https://www.bymov.io/'
     },
     {
       name: <Msg id="nav_wallet" />,
