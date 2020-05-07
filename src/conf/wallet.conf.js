@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 
-import img_anybit from '../images/wallet/mobile/wallet-anybit@2x.png';
 import img_bycoin from '../images/wallet/mobile/wallet-bycoin@2x.png';
-import img_bixin from '../images/wallet/mobile/wallet-bixin@2x.png';
 import img_bepal from '../images/wallet/mobile/wallet-bepal@2x.png';
 import img_hoo from '../images/wallet/mobile/wallet-hoo@2x.png';
 import img_hyperpay from '../images/wallet/mobile/wallet-hyperpay@2x.png';
@@ -61,12 +59,6 @@ export default {
   ],
   mobileWalletList: [
     {
-      img: img_anybit,
-      title: <Msg id="wallet_mobile_anybit" />,
-      link: 'https://www.anybit.io/',
-      des: <Msg id="wallet_mobile_anybit_des" />
-    },
-    {
       img: img_bepal,
       title: <Msg id="wallet_mobile_bepal" />,
       link: 'https://www.bepal.pro/Download',
@@ -77,12 +69,6 @@ export default {
       title: <Msg id="wallet_mobile_bitpie" />,
       link: 'https://bitpie.com',
       des: <Msg id="wallet_mobile_bitpie_des" />
-    },
-    {
-      img: img_bixin,
-      title: <Msg id="wallet_mobile_binxin" />,
-      link: 'https://bixin.com',
-      des: <Msg id="wallet_mobile_binxin_des" />
     },
     {
       img: img_bycoin,

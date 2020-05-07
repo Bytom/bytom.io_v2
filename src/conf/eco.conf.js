@@ -3,11 +3,7 @@ import { Link, injectIntl, FormattedMessage as Msg } from "gatsby-plugin-intl";
 export default {
   ecoList: [{
       title: <Msg id="eco_nav_wallet" />,
-      list: [{
-          img: require('../images/eco/1-Anybit.png'),
-          title: 'Anybit',
-          link: 'https://www.anybit.io/',
-        },
+      list: [
         {
           img: require('../images/eco/1-BEPAL.png'),
           title: 'BEPAL',
@@ -17,11 +13,6 @@ export default {
           img: require('../images/eco/1-Bitpie.png'),
           title: 'Bitpie',
           link: 'https://bitpie.com/',
-        },
-        {
-          img: require('../images/eco/1-Bixin.png'),
-          title: 'Bixin',
-          link: 'https://bixin.com/',
         },
         {
           img: require('../images/eco/1-bycoin.png'),
