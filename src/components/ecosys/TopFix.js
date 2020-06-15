@@ -125,10 +125,6 @@ const navList = [
     name: <Msg id="eco_nav_pool" />,
     index: 2
   }, {
-    id: 'exchanges',
-    name: <Msg id="eco_nav_exchange" />,
-    index: 3
-  }, {
     id: 'safety',
     name: <Msg id="eco_nav_safety" />,
     index: 4
