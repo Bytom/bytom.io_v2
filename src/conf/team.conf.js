@@ -77,15 +77,6 @@ export default {
           {type: 'email', link: 'jinl@8btc.com'},
         ],
       },
-      // {
-      //   name: <Msg id="team_member_myy" />,
-      //   position: <Msg id="team_member_dev_title" />,
-      //   img: img_mayy,
-      //   contact: [
-      //     {type: 'linkedin', link: 'https://www.linkedin.com/in/%E8%80%80%E8%80%80-%E9%A9%AC-596414132/'},
-      //     // {type: 'email', link: ''},
-      //   ],
-      // },
       {
         name: <Msg id="team_member_ys" />,
         position: <Msg id="team_member_dev_title" />,
@@ -101,15 +92,6 @@ export default {
         img: img_linhy,
         contact: [
           {type: 'linkedin', link: 'https://www.linkedin.com/in/haoyu-lin-239474123/'},
-          // {type: 'email', link: ''},
-        ],
-      },
-      {
-        name: <Msg id="team_member_wz"/>,
-        position: <Msg id="team_member_dev_title" />,
-        img: img_wangz,
-        contact: [
-          {type: 'linkedin', link: ''},
           // {type: 'email', link: ''},
         ],
       },
@@ -153,15 +135,6 @@ export default {
       {}
     ],
     [
-      // {
-      //   name: 'Du Chao',
-      //   position: 'Marketing Director',
-      //   img: img_duc,
-      //   contact: [
-      //     {type: 'linkin', link: 'https://www.linkedin.com/in/chao-du-304a92b2'},
-      //     {type: 'email', link: 'duc@bytom.io'},
-      //   ],
-      // },
       {
         name: <Msg id="team_member_qzx" />,
         position: <Msg id="team_member_qzx_title" />,
@@ -177,15 +150,6 @@ export default {
         img: img_lizc,
         contact: [
           {type: 'email', link: 'lizc@8btc.com'},
-        ],
-      },
-      {
-        name: <Msg id="team_member_mql" />,
-        position: <Msg id="team_member_mql_title" />,
-        img: img_maql,
-        contact: [
-          {type: 'linkin', link: ''},
-          {type: 'email', link: 'mql@bytom.io'},
         ],
       },
       {
@@ -207,14 +171,6 @@ export default {
         ],
       },
       {
-        name: <Msg id="team_member_hxl" />,
-        position: <Msg id="team_member_hxl_title" />,
-        img: img_huangxl,
-        contact: [
-          {type: 'email', link: 'huangxl@bytom.io'},
-        ],
-      },
-      {
         name: <Msg id="team_member_lky" />,
         position: <Msg id="team_member_lky_title" />,
         img: img_liky,
@@ -232,15 +188,7 @@ export default {
           {type: 'email', link: ''},
         ],
       },
-      // {
-      //   name: <Msg id="team_member_fmx" />,
-      //   position: <Msg id="team_member_fmx_title" />,
-      //   img: img_fanmx,
-      //   contact: [
-      //     {type: 'linkin', link: 'https://www.linkedin.com/in/%E9%86%92-%E6%A2%A6-392635175/'},
-      //     {type: 'email', link: 'fanmx@bytom.io'},
-      //   ],
-      // },
+      {},
       {},
     ],
   ],
