@@ -112,7 +112,7 @@
   "wallet_list_more": "更多版本",
   "wallet_list_file": "文件名",
   "wallet_list_height": "区块高度",
-  "wallet_list_size": "内存大小",
+  "wallet_list_size": "文件大小",
   "wallet_list_update": "更新时间",
   "wallet_list_link": "链接",
   "wallet_list_btn_download": "下载",

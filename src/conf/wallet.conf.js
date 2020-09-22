@@ -128,7 +128,7 @@ export default {
     title: [<Msg id="wallet_list_file" />, <Msg id="wallet_list_height" />, <Msg id="wallet_list_size" />, <><Msg id="wallet_list_md5" />(MD5)</>, <Msg id="wallet_list_update" />, <Msg id="wallet_list_link" />],
     width: [280, 110, 150, 350, 260],
     data: [
-      ['200206-Update.db.zip', '388255', '659MB', '774099a7e5cbca04d792bb30832ef16d', '2020-02-06 18:00:00 (GMT+8)', <a target="_blank" href="https://mirrors.tuna.tsinghua.edu.cn/osdn/bytom/72324/200206-Update.db.zip"><Msg id="wallet_list_btn_download" /></a>],
+      ['20200921-Update.db.zip', '519460', '862MB', 'aef284cc9a6e9486affddc822d0bcfdf', '2020-09-21 18:00:00 (GMT+8)', <a target="_blank" href="https://sourceforge.net/projects/bytomblockchain/files/core.db/"><Msg id="wallet_list_btn_download" /></a>],
     ],
   },
 };
