@@ -283,7 +283,7 @@
   "form_label_btm_des": "Balance should be more than 1,000,000 BTM",
   "form_label_website": "Please fill your website:",
   "form_label_email": "Please fill your e-mail address:",
-  "form_label_wechat": "Please fill your wechat account:",
+  "form_label_wechat": "Please fill your telegram account:",
   "form_label_sn": "Please list all your media accounts or community channels",
   "form_label_sn_des": "At least one media account(Weibo/Twitter/Telegram channel/Medium/Steem) or community channel(Wechat /Reddit/ Forum/Telegram group/Facebook grouop)",
   "form_label_plan": "Please fill your promotion strategy and plan for Block Producer election:",
@@ -300,7 +300,7 @@
   "form_label_type_3": "Investment institution",
   "form_label_type_4": "Investor",
   "form_label_type_5": "DApp development team",
-  "form_label_type_6": "KOL",
+  "form_label_type_6": "Influencer",
   "form_label_type_7": "Web portal",
   "form_label_type_8": "Marketing company",
   "form_label_type_9": "Development team",
@@ -429,7 +429,7 @@
   "vapor_slide_feature_part3_title":"Open contract consensus",
   "vapor_slide_feature_part3_des":"All consensus node to participate in the block generation and the verification match of the contract transaction",
 
-  "vapor_node_eco_des":"In order to better maintain Vapor network, Bytom foundation will spend 10 million BTM per year as node rewards, in which, 6 million will be deliver to BP(Block producer) Nodes, 4 million will be delivered to Candidate nodes.",
+  "vapor_node_eco_des":"In order to better maintain Vapor network, Bytom foundation will spend 10 million BTM per year as node rewards, in which, 6 million will be deliver to BP(Block producer) Nodes, 4 million will be delivered to standby block producer nodes.",
 
   "vapor_list_part1_title":"Block Producer",
   "vapor_list_part1_des":"The Block Producers are responsible for running the nodes and participating in block production",

@@ -179,7 +179,7 @@ const options_en = [
   "Investment institution",
   "Investor",
   "DApp development team",
-  "KOL",
+  "Influencer",
   "Web portal",
   "Marketing company",
   "Development team",

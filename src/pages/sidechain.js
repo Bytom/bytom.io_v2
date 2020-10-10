@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import css from 'styled-components';
-import {FormattedMessage as Msg, injectIntl} from 'gatsby-plugin-intl';
+import {Link, FormattedMessage as Msg, injectIntl} from 'gatsby-plugin-intl';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -207,7 +207,7 @@ const FooterItem = css.li`
     width: 1px;
     height: 30px;
     background:rgba(0, 0, 0, 0.24);
-    margin: 0 40px 0 auto;
+    margin: auto 40px auto auto;
   }
   @media (max-width: 640px) {
     width: 100%;
@@ -321,7 +321,8 @@ const Detail = ({ intl }) => {
                 <Img src={item.img} alt=""/>
                 <div>
                   <h3>{item.title}</h3>
-                  <a href={item.link} target={"_blanket"}>{item.cont} >></a>
+                  {item.link && <a href={item.link} target={"_blanket"}>{item.cont} >></a>}
+                  {item.innerLink && <Link to={item.innerLink} target={"_blanket"}>{item.cont} >></Link>}
                 </div>
                 {(index !== (_conf.footerFeatures.length-1)) && <div className="divider"/>}
               </FooterItem>

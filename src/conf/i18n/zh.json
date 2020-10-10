@@ -432,7 +432,7 @@
   "vapor_slide_feature_part3_title":"开放式合约共识",
   "vapor_slide_feature_part3_des":"共识节点参与合约交易的打包出块和验证匹配",
 
-  "vapor_node_eco_des":"为了更好的维护Vapor网络，比原链基金会将每年拿出1000万BTM作为节点奖励，其中600万作为BP出块节点奖励，400万作为候选节点奖励。",
+  "vapor_node_eco_des":"为了更好的维护Vapor网络，比原链基金会将每年拿出1000万BTM作为节点奖励，其中600万作为BP出块节点奖励，400万作为备选节点奖励。",
 
   "vapor_list_part1_title":"共识节点",
   "vapor_list_part1_des":"正式共识节点负责运行节点，参与区块生产。",

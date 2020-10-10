@@ -41,7 +41,7 @@ export default {
       img: img_icon_footer_des2,
       title: <Msg id="vapor_bottom_part2" />,
       cont: <Msg id="vapor_bottom_part2_des" />,
-      link:"https://bytom.io/en/node/detail"
+      innerLink:"/node/detail"
     },
     {
       img: img_icon_footer_des3,
