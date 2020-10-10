@@ -20,6 +20,7 @@
   "nav_wiki": "文档",
   "nav_tools": "工具",
   "nav_bounty": "赏金任务",
+  "nav_sidechain": "比原侧链",
   "nav_team": "团队",
   "nav_white_paper": "白皮书",
   "nav_logo": "Logo",
@@ -419,6 +420,33 @@
   "bounty_faq_5_q": "5、赏金如何发放？",
   "bounty_faq_5_a": "根据项目 Roadmap 分阶段进行发放，赏金以 BTM Token 的形式发放。",
   "bounty_faq_6_q": "6、除了资金之外，项目还可以获得什么？",
-  "bounty_faq_6_a": "项目的成员可以优先参与比原链在全球举办的各种活动，并受邀成为嘉宾进行演讲，有机会在社区和全媒体曝光自己的项目，还有各类定制的礼物。"
+  "bounty_faq_6_a": "项目的成员可以优先参与比原链在全球举办的各种活动，并受邀成为嘉宾进行演讲，有机会在社区和全媒体曝光自己的项目，还有各类定制的礼物。",
+
+  "vapor_banner":"Vapor Pro：基于DPOS共识机制的\n高速Layer2基础设施",
+  "vapor_banner_subtitle":"Vapor 作为比原链的layer2的扩容方案，采用跨链技术与Bytom主链交互。相较于以太坊Vapor侧链上的交易更快，费用更低，网络更畅通。目前已经作为区块链基础设施承载MOV DeFi协议的链上交易。",
+
+  "vapor_slide_feature_part1_title":"极致TPS性能",
+  "vapor_slide_feature_part1_des":"0.5s出块时间可达16万TPS理论峰值，2万+TPS实测",
+  "vapor_slide_feature_part2_title":"可插拔模块",
+  "vapor_slide_feature_part2_des":"支持DEX模块、虚拟机模块及其它企业级自定义商业模块",
+  "vapor_slide_feature_part3_title":"开放式合约共识",
+  "vapor_slide_feature_part3_des":"共识节点参与合约交易的打包出块和验证匹配",
+
+  "vapor_node_eco_des":"为了更好的维护Vapor网络，比原链基金会将每年拿出1000万BTM作为节点奖励，其中600万作为BP出块节点奖励，400万作为候选节点奖励。",
+
+  "vapor_list_part1_title":"共识节点",
+  "vapor_list_part1_des":"正式共识节点负责运行节点，参与区块生产。",
+  "vapor_list_part2_title":"备选节点",
+  "vapor_list_part2_des":"正式共识节点退出，备选共识节点中依照得票数量晋升共识节点。",
+  "vapor_list_part3_title":"竞选节点",
+  "vapor_list_part3_des":"竞选节点对比原链侧链网络贡献开发和宣传资源，并获得社区投票。",
+
+  "vapor_bottom_part2":"节点申请指南",
+  "vapor_bottom_part3":"节点创建指南",
+  "vapor_bottom_part1":"节点投票",
+  "vapor_bottom_part1_des":"参与投票",
+  "vapor_bottom_part2_des":"更多",
+  "vapor_bottom_part3_des":"更多"
+
 
 }

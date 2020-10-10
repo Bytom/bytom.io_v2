@@ -21,6 +21,7 @@
   "nav_tools": "Tools",
   "nav_bounty": "Bounty",
   "nav_team": "Team",
+  "nav_sidechain": "Sidechain",
   "nav_white_paper": "White Paper",
   "nav_logo": "Logo",
   "nav_contack": "Contact",
@@ -416,6 +417,32 @@
   "bounty_faq_5_q": "5. How is the bounty given to participants?",
   "bounty_faq_5_a": "The bounty will be given in batches in BTM tokens according to the project’s roadmap.",
   "bounty_faq_6_q": "6. What can participants get in addition to the fund?",
-  "bounty_faq_6_a": "Participants have priority to attend various events hosted by Bytom over the world and to be invited as a speaker. Participants have access to the latest Bytom swags and media exposure opportunity."
+  "bounty_faq_6_a": "Participants have priority to attend various events hosted by Bytom over the world and to be invited as a speaker. Participants have access to the latest Bytom swags and media exposure opportunity.",
+
+  "vapor_banner":"Vapor Pro： A high-performance\n sidechain of Bytom",
+  "vapor_banner_subtitle":"Vapor, as Bytom's sidechain, it's a layer2 scalability solution, uses cross-chain technology to interact with the Bytom mainchain. Compared with Ethereum, Vapor sidechain has faster transactions, lower cost, and less congestion possibility",
+
+  "vapor_slide_feature_part1_title":"Extreme TPS",
+  "vapor_slide_feature_part1_des":"For high speed in block generation，sidechain can  get to 160000TPS",
+  "vapor_slide_feature_part2_title":"Pluggable module",
+  "vapor_slide_feature_part2_des":"Support DEX modules, virtual machine modules, or other enterprise-level custom business modules",
+  "vapor_slide_feature_part3_title":"Open contract consensus",
+  "vapor_slide_feature_part3_des":"All consensus node to participate in the block generation and the verification match of the contract transaction",
+
+  "vapor_node_eco_des":"In order to better maintain Vapor network, Bytom foundation will spend 10 million BTM per year as node rewards, in which, 6 million will be deliver to BP(Block producer) Nodes, 4 million will be delivered to Candidate nodes.",
+
+  "vapor_list_part1_title":"Block Producer",
+  "vapor_list_part1_des":"The Block Producers are responsible for running the nodes and participating in block production",
+  "vapor_list_part2_title":"Standby Block Producer",
+  "vapor_list_part2_des":"If any Block Producer exits and the Standby Block Producer is promoted according to the number of votes.",
+  "vapor_list_part3_title":"Candidate Node",
+  "vapor_list_part3_des":"Contribute development and promotion resources to the Bytom Sidechain network and get votes from the community.",
+
+  "vapor_bottom_part2":"Node application",
+  "vapor_bottom_part3":"Create node",
+  "vapor_bottom_part1":"Staking",
+  "vapor_bottom_part1_des":"Participate in the vote",
+  "vapor_bottom_part2_des":"View more",
+  "vapor_bottom_part3_des":"View more"
 
 }
