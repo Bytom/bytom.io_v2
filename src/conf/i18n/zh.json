@@ -446,7 +446,24 @@
   "vapor_bottom_part1":"节点投票",
   "vapor_bottom_part1_des":"参与投票",
   "vapor_bottom_part2_des":"更多",
-  "vapor_bottom_part3_des":"更多"
+  "vapor_bottom_part3_des":"更多",
 
+  "vapor_eco_title_1": "侧链",
+  "vapor_eco_title_2": "生态",
+  "vapor_eco_part1_title": "BApp 统一框架",
+  "vapor_eco_part1_des": "为开发者提供一站式应用搭建服务",
+  "vapor_eco_part2_title": "交叉跨链协议",
+  "vapor_eco_part2_des": "实现外部资产和侧链资产的高效流动",
+  "vapor_eco_part3_title": "MOV金融服务",
+  "vapor_eco_part3_des": "提供去中心化兑换、借贷、稳定币一体式服务",
+  "vapor_eco_part4_title": "可信节点服务",
+  "vapor_eco_part4_des": "节点提供预言机和随机数服务",
+
+  "vapor_node_title_1": "全球",
+  "vapor_node_title_2": "节点",
+  "vapor_node_des": "为了更好的维护Vapor网络，比原链基金会将每年拿出1000万BTM作为节点奖励（每年调整一次），其中600万作为BP出块节点奖励，400万作为备选节点奖励。",
+  "vapor_node_part1_title": "共识节点",
+  "vapor_node_part2_title": "备选节点",
+  "vapor_node_part3_title": "竞选节点"
 
 }

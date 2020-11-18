@@ -7,8 +7,7 @@ import SEO from '../components/seo';
 import DesBar from '../components/desbar';
 
 import img_bg from '../images/bg-vapor.png';
-import node_eco_bg from '../images/side/node_eco_bg.png';
-import footer_des_bg from '../images/side/footer_des_bg.png';
+import map_bg from '../images/side/map.png'
 import _conf from '../conf/side.conf';
 import axios from "axios/index";
 
@@ -16,59 +15,8 @@ const BannerWrap = css.div`
   width: 100%;
   height: 560px;
   background: #004EE4 url(${img_bg}) center top / cover no-repeat;
-  @media (max-width: 640px) {
-    height: 440px;  
-  }
-`;
-const NodeWrap = css.div`
-  width: 100%;
-  min-height: 723px;
-  background: #fafbfe url(${node_eco_bg}) center top / cover no-repeat;
-  .paragraph{
-    width: 869px;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    padding-top:99px;
-    h2{
-      font-size: 44px;
-      font-weight: bold;
-      span{
-        color: #004EE4;
-      }
-      margin-bottom:10px;
-    }
-    p{
-      font-size: 16px;
-      color: rgba(0, 0, 0, 0.56);
-      text-align:left;
-    }
-    @media (max-width: 640px) {
-      width: 100%;
-      margin: 0 10px;
-    }
-  }
-  .cardWrap{
-      width: 1280px;
-      display: flex;
-      position: relative;
-      margin: 40px auto 0;
-      @media (max-width: 640px) {
-        width: 100%;
-        flex-direction: column;
-        padding: 0 30px;
-      }
-  }
-`;
-const Cont = css.div`
-  width: 1280px;
-  height: 100%;
-  margin: 0 auto;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  h1{
+
+  .title {
     white-space: pre-line;
     font-size: 54px;
     font-weight: bold;
@@ -76,7 +24,7 @@ const Cont = css.div`
     line-height: 72px;
     color: #fff;
   }
-  p{
+  .subtitle {
     font-size: 24px;
     font-weight: 300;
     margin-top: 20px;
@@ -89,142 +37,252 @@ const Cont = css.div`
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
   }
   @media (max-width: 640px) {
-    width: 100%;
-    h1{
-      padding: 118px 40px 0 40px;
+    height: 440px;  
+
+    .title {
+      padding: 80px 40px 0 40px;
       line-height: 48px;
       font-size: 32px;
       white-space: none;
     }
-    P{
+    .subtitle {
       font-size: 14px;
       line-height: 24px;
     }
   }
 `;
-
-const CardWarp = css.div`
-  width: 33%;
-  background:#fff;
+const Cont = css.div`
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  color: #fff;
   text-align: center;
   position: relative;
-  border-radius: 8px;
-  height: 370px;
-  padding: 60px 45px;
-  text-align: center;
-  
-  .hide{
-    display:none;
-    h4{
-      font-weight: bold;
-      font-size: 18px;
-      
-      color: rgba(0, 0, 0, 0.88);
-      margin-bottom: 12px;
-    }
-  }
-  .show{
-    p{
-      font-size: 16px;
-    }
-    display:block;
-  }
-  
-  &:not(:last-child){
-    margin-right: 32px;
-  }
-  
-  &:hover{
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
-    .hide{
-      display:block;
-    }
-    .show{
-      display:none;
-    }
-  }
-  i{
-    height: 29px;
-    width: 29px;
-    border-radius: 19px;
-    display: block;
-    background: black;
-    border: 9px solid gray;
-    margin: 0 auto 20px;
-    
-    &.green{
-      background: #91D303;
-      border-color: #F4FBE6;
-    }
-    &.yellow{
-      background: #FFCC00;
-      border-color: #FFFAE5;
-    }
-    &.blue{
-      background:#004EE4;
-      border-color: #E5EDFC;
-    }
-  }
-  
-  .num{
-    font-weight: bold;
-    font-size: 90px;
-    
-    color: #000000;
-  }
-  
   @media (max-width: 640px) {
     width: 100%;
-    margin-bottom: 30px;
   }
 `;
+const EcoWrap = css.div`
+  padding: 100px 0;
+  background: #fafafa;
 
-const FooterWrap = css.div`
-  width: 100%;
-  background: #ffffff url(${footer_des_bg}) center top / cover no-repeat;
-`;
-const FooterItem = css.li`
-  width: 33%;
-  display: flex;
-  float: left;
-  padding: 70px 10px;
-  box-sizing: border-box;
-  text-align:left;
+  .list {
+    display: flex;
+    margin-top: 60px;
 
-  h3{
-    font-weight: bold;
-    font-size: 28px;
+    .card {
+      flex: 1;
+      box-sizing: border-box;
+      padding: 65px 24px 60px;
+      background: #fff;
+      text-align: center;
+
+      & + .card {
+        margin-left: 32px;
+      }
+      .img {
+        margin-bottom: 26px;
+        width: 62px;
+        height: 62px;
+      }
+      .title {
+        margin-bottom: 8px;
+        font-weight: bold;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.88);
+      }
+      .des {
+        font-size: 16px;
+        line-height: 1.8;
+        color: rgba(0, 0, 0, 0.56);
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 60px 0;
+
+    .list {
+      display: block;
+
+      .card {
+        border-bottom: 0.5px solid #eae8e8;
+
+        & + .card {
+          margin-left: 0;
+        }
+        &:first-child {
+          border-top: 0.5px solid #eae8e8;
+        }
+      }
+    }
     
-    color: #000000;
   }
-  a{
+`
+const TitleWrap = css.div`
+  padding: 0 10px;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 44px;
+  color: rgba(0, 0, 0, 0.8);
+  word-break: break-all;
+
+  .highlight {
     color: #004EE4;
   }
-  .divider{
-    width: 1px;
-    height: 30px;
-    background:rgba(0, 0, 0, 0.24);
-    margin: auto 40px auto auto;
+  .space {
+    margin: 0 8px;
   }
+`
+const FooterWrap = css.div`
+  padding: 40px 0 100px;
+  width: 100%;
+  background: #fff;
+
+  .list {
+    padding-left: 40px;
+  }
+  .item {
+    width: 33%;
+    display: flex;
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align:left;
+
+    ::after {
+      content: ' ';
+      display: block;
+      margin: auto 40px auto auto;
+      width: 1px;
+      height: 30px;
+      background:rgba(0, 0, 0, 0.24);
+    }
+    &:last-child::after {
+      display: none;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 28px;
+      color: #000;
+    }
+    .link {
+      color: #004EE4;
+    }
+    .divider {
+      margin: auto 40px auto auto;
+      width: 1px;
+      height: 30px;
+      background:rgba(0, 0, 0, 0.24);
+    }
+    .img {
+      width: 68px;
+      height: 68px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 20px;
+    }
+  }
+
   @media (max-width: 640px) {
-    width: 100%;
-    padding: 20px 10px;
-    border-bottom: 0.5px solid #eae8e8;
-    .divider{
-      display:none;
+    padding-bottom: 10px;
+
+    .list {
+      padding-left: 0;
+    }
+    .item {
+      width: 100%;
+      padding: 20px 10px;
+      border-bottom: 0.5px solid #eae8e8;
+      .divider{
+        display:none;
+      }
     }
   }
 `;
-const Img = css.img`
-  width: 68px;
-  height: 68px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-`;
+const NodeWrap = css.div`
+  padding-top: 100px;
+  background: #fff;
+  text-align: center;
+
+  .des {
+    margin: 10px auto 20px;
+    max-width: 710px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.56);
+  }
+  .node-list {
+    .node {
+      display: inline-block;
+
+      & + .node {
+        margin-left: 122px;
+      }
+    }
+  }
+  .circle {
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 7px solid;
+    
+    &.green {
+      background: #06BE85;
+      border-color: #E5F6F0;
+    }
+    &.yellow {
+      background: #F88805;
+      border-color: #FCF3E7;
+    }
+    &.gray {
+      background: #808A95;
+      border-color: #F2F3F4;
+    }
+  }
+  .num {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.88);
+  }
+  .map {
+    margin: 40px auto 0;
+    width: 1240px;
+  }
+
+  @media (max-width: 640px) {
+    padding-top: 60px;
+
+    .node-list {
+      .node {
+        display: block;
+
+        & + .node {
+          margin-left: 0;
+        }
+      }
+    }
+    
+  }
+`
+
+const Title = ({ intl, children, highlightIndex }) => {
+  return (
+    <TitleWrap>
+      {children.map((item, index) => 
+        <span className={ `${highlightIndex === index && 'highlight'} ${intl.locale === 'en' && 'space'}`}>
+          { item }
+        </span>
+      )}
+    </TitleWrap>
+  )
+}
 
 const Detail = ({ intl }) => {
   const [loading, setLoading] = useState(true);
@@ -250,85 +308,72 @@ const Detail = ({ intl }) => {
   const stanbyBpNum = nodeList.filter(n => n.role === 1).length;
   return (
   <Layout>
-    <SEO
-      title="Bytom"
-    />
+    <SEO title="Bytom" />
     <BannerWrap>
       <Cont>
-        <h1><Msg id="vapor_banner" /></h1>
-        <p><Msg id="vapor_banner_subtitle" /></p>
+        <h1 className="title"><Msg id="vapor_banner" /></h1>
+        <p className="subtitle"><Msg id="vapor_banner_subtitle" /></p>
       </Cont>
     </BannerWrap>
     <DesBar features={_conf.features} />
+    <EcoWrap>
+      <Cont>
+        <Title highlightIndex={ 0 } intl={ intl }>
+          <Msg id="vapor_eco_title_1" />
+          <Msg id="vapor_eco_title_2" />
+        </Title>
+        <div className="list">
+          {_conf.ecoFeatures.map(item =>
+            <div className="card">
+              <img className="img" src={ item.img } />
+              <div className="title">{ item.title }</div>
+              <div className="des">{ item.cont }</div>
+            </div>
+          )}
+        </div>
+      </Cont>
+    </EcoWrap>
     <NodeWrap>
-      <div className='paragraph'>
-        <h2>
-          {
-            intl.locale === 'en' ?
-              <>
-                <span>Node</span> ecology
-              </>
-              :
-              <>
-                <span>节点</span>生态
-              </>
-          }
-        </h2>
-        <p><Msg id="vapor_node_eco_des"/></p>
+      <Title highlightIndex={ 1 } intl={ intl }>
+        <Msg id="vapor_node_title_1" />
+        <Msg id="vapor_node_title_2" />
+      </Title>
+      <div className="des">
+        <Msg id="vapor_node_des" />
       </div>
-      <div className="cardWrap">
-        <CardWarp>
-          <i className="green"></i>
-          <div className="show">
-            <div className="num">{bpNum||0}</div>
-            <p><Msg id="vapor_list_part1_title"/></p>
-          </div>
-          <div className="hide">
-            <h4><Msg id="vapor_list_part1_title"/></h4>
-            <p><Msg id="vapor_list_part1_des"/></p>
-          </div>
-        </CardWarp>
-        <CardWarp>
-          <i className="yellow"></i>
-          <div className="show">
-            <div className="num">{stanbyBpNum||0}</div>
-            <p><Msg id="vapor_list_part2_title"/></p>
-          </div>
-          <div className="hide">
-            <h4><Msg id="vapor_list_part2_title"/></h4>
-            <p><Msg id="vapor_list_part2_des"/></p>
-          </div>
-        </CardWarp>
-        <CardWarp>
-          <i className="blue"></i>
-          <div className="show">
-            <div className="num">{totalNode||0}</div>
-            <p><Msg id="vapor_list_part3_title"/></p>
-          </div>
-          <div className="hide">
-            <h4><Msg id="vapor_list_part3_title"/></h4>
-            <p><Msg id="vapor_list_part3_des"/></p>
-          </div>
-        </CardWarp>
+      <div className="node-list">
+        <div className="node">
+          <i className="circle green" />
+          <div className="num">{ bpNum || 0 }</div>
+          <div className="des"><Msg id="vapor_node_part1_title"/></div>
+        </div>
+        <div className="node">
+          <i className="circle yellow" />
+          <div className="num">{ stanbyBpNum || 0 }</div>
+          <div className="des"><Msg id="vapor_node_part2_title"/></div>
+        </div>
+        <div className="node">
+          <i className="circle gray" />
+          <div className="num">{ totalNode || 0 }</div>
+          <div className="des"><Msg id="vapor_node_part3_title"/></div>
+        </div>
       </div>
+      <img class="map" src={ map_bg } />
     </NodeWrap>
     <FooterWrap>
       <Cont>
-        <ul className="clearfix">
-          {
-            _conf.footerFeatures.map((item, index) => (
-              <FooterItem key={index}>
-                <Img src={item.img} alt=""/>
-                <div>
-                  <h3>{item.title}</h3>
-                  {item.link && <a href={item.link} target={"_blanket"}>{item.cont} >></a>}
-                  {item.innerLink && <Link to={item.innerLink} target={"_blanket"}>{item.cont} >></Link>}
-                </div>
-                {(index !== (_conf.footerFeatures.length-1)) && <div className="divider"/>}
-              </FooterItem>
-            ))
-          }
-        </ul>
+        <div className="list clearfix">
+          {_conf.footerFeatures.map(item => 
+            <div className="item">
+              <img className="img" src={ item.img } />
+              <div>
+                <h3 class="title">{ item.title }</h3>
+                { item.link && <a class="link" href={ item.link } target="_blank">{ item.cont } >></a> }
+                { item.innerLink && <Link to={ item.innerLink } target="_blank">{ item.cont } >></Link> }
+              </div>
+            </div>
+          )}
+        </div>
       </Cont>
     </FooterWrap>
   </Layout>
