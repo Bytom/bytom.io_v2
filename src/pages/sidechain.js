@@ -25,9 +25,7 @@ const BannerWrap = css.div`
     color: #fff;
   }
   .subtitle {
-    font-size: 24px;
-    font-weight: 300;
-    margin-top: 20px;
+    margin: 20px auto 0;
     color: rgba(255, 255, 255, 0.72);
     font-weight: 300;
     font-size: 20px;
@@ -35,8 +33,6 @@ const BannerWrap = css.div`
     max-width: 826px;
     width: 100%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
   }
   @media (max-width: 640px) {
     height: 440px;  
@@ -276,7 +272,10 @@ const Title = ({ intl, children, highlightIndex }) => {
   return (
     <TitleWrap>
       {children.map((item, index) => 
-        <span className={ `${highlightIndex === index && 'highlight'} ${intl.locale === 'en' && 'space'}`}>
+        <span 
+          key={ index } 
+          className={ `${highlightIndex === index ? 'highlight' : ''} ${intl.locale === 'en' ? 'space' : ''}` }
+        >
           { item }
         </span>
       )}
@@ -308,7 +307,7 @@ const Detail = ({ intl }) => {
   const stanbyBpNum = nodeList.filter(n => n.role === 1).length;
   return (
   <Layout>
-    <SEO title="Bytom" />
+    <SEO title={ {zh: 'Sidechain', en: 'Sidechain'} } />
     <BannerWrap>
       <Cont>
         <h1 className="title"><Msg id="vapor_banner" /></h1>
@@ -323,8 +322,8 @@ const Detail = ({ intl }) => {
           <Msg id="vapor_eco_title_2" />
         </Title>
         <div className="list">
-          {_conf.ecoFeatures.map(item =>
-            <div className="card">
+          {_conf.ecoFeatures.map((item, index) =>
+            <div className="card" key={ index }>
               <img className="img" src={ item.img } />
               <div className="title">{ item.title }</div>
               <div className="des">{ item.cont }</div>
@@ -358,17 +357,17 @@ const Detail = ({ intl }) => {
           <div className="des"><Msg id="vapor_node_part3_title"/></div>
         </div>
       </div>
-      <img class="map" src={ map_bg } />
+      <img className="map" src={ map_bg } />
     </NodeWrap>
     <FooterWrap>
       <Cont>
         <div className="list clearfix">
-          {_conf.footerFeatures.map(item => 
-            <div className="item">
+          {_conf.footerFeatures.map((item, index) => 
+            <div className="item" key={ index }>
               <img className="img" src={ item.img } />
               <div>
-                <h3 class="title">{ item.title }</h3>
-                { item.link && <a class="link" href={ item.link } target="_blank">{ item.cont } >></a> }
+                <h3 className="title">{ item.title }</h3>
+                { item.link && <a className="link" href={ item.link } target="_blank">{ item.cont } >></a> }
                 { item.innerLink && <Link to={ item.innerLink } target="_blank">{ item.cont } >></Link> }
               </div>
             </div>

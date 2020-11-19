@@ -213,8 +213,8 @@ const Header = ({ siteTitle, light, intl, disableSubnav }) => {
                   getPopupContainer={() => document.getElementById('nav')}
                   overlay={
                     <Menu>
-                      {item.children.map(menu => (
-                        <Menu.Item>
+                      {item.children.map((menu, index) => (
+                        <Menu.Item key={ index }>
                           <NavItem {...menu} />
                         </Menu.Item>
                       ))}
