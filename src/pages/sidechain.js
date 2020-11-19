@@ -132,6 +132,9 @@ const TitleWrap = css.div`
   .space {
     margin: 0 8px;
   }
+  > span {
+    cursor: initial;
+  }
 `
 const FooterWrap = css.div`
   padding: 40px 0 100px;
