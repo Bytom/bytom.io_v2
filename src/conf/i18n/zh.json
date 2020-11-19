@@ -426,7 +426,7 @@
   "vapor_banner_subtitle":"Vapor 作为比原链的layer2的扩容方案，采用跨链技术与Bytom主链交互。相较于以太坊Vapor侧链上的交易更快，费用更低，网络更畅通。目前已经作为区块链基础设施承载MOV DeFi协议的链上交易。",
 
   "vapor_slide_feature_part1_title":"极致TPS性能",
-  "vapor_slide_feature_part1_des":"0.5s出块时间可达16万TPS理论峰值，2万+TPS实测",
+  "vapor_slide_feature_part1_des":"0.5s出块时间, 可达1万6TPS理论峰值",
   "vapor_slide_feature_part2_title":"可插拔模块",
   "vapor_slide_feature_part2_des":"支持DEX模块、虚拟机模块及其它企业级自定义商业模块",
   "vapor_slide_feature_part3_title":"开放式合约共识",
