@@ -307,7 +307,7 @@ const Detail = ({ intl }) => {
   const stanbyBpNum = nodeList.filter(n => n.role === 1).length;
   return (
   <Layout>
-    <SEO title={ {zh: 'Sidechain', en: 'Sidechain'} } />
+    <SEO title={ {zh: '比原侧链', en: 'Sidechain'} } />
     <BannerWrap>
       <Cont>
         <h1 className="title"><Msg id="vapor_banner" /></h1>
