@@ -64,9 +64,10 @@ export default {
         },
       ]
     },
+
     {
-      name: <Msg id="nav_bp_node" />,
-      href: '/node/detail',
+      name: <Msg id="nav_sidechain"/>,
+      href: '/sidechain/',
     },
     {
       name: <Msg id="nav_blog" />,
