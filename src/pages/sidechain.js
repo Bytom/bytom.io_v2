@@ -1,6 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useMemo} from 'react';
 import css from 'styled-components';
+import axios from "axios/index";
 import {Link, FormattedMessage as Msg, injectIntl} from 'gatsby-plugin-intl';
+
+import _conf from '../conf/side.conf';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -8,8 +11,6 @@ import DesBar from '../components/desbar';
 
 import img_bg from '../images/bg-vapor.png';
 import map_bg from '../images/side/map.png'
-import _conf from '../conf/side.conf';
-import axios from "axios/index";
 
 const BannerWrap = css.div`
   width: 100%;
@@ -284,27 +285,30 @@ const Title = ({ intl, children, highlightIndex }) => {
 }
 
 const Detail = ({ intl }) => {
-  const [loading, setLoading] = useState(true);
   const [nodeList, setNodeList] = useState([]);
+
   useEffect(() => {
     const getList = async () => {
-      setLoading(true);
       const {
         data: {
           data
         },
       } = await axios.get(`${_conf.node_list}`);
       setNodeList(data.consensus_nodes);
-      setLoading(false);
     };
     try {
       getList();
     } catch (error) {}
   }, []);
 
-  const totalNode = nodeList.length;
-  const bpNum = nodeList.filter(n => n.role === 0).length;
-  const stanbyBpNum = nodeList.filter(n => n.role === 1).length;
+  const { totalNode, bpNum, stanbyBpNum } = useMemo(() => {
+    return {
+      totalNode: nodeList.length,
+      bpNum: nodeList.filter(n => n.role === 0).length,
+      stanbyBpNum: nodeList.filter(n => n.role === 1).length
+    }
+  }, [nodeList])
+
   return (
   <Layout>
     <SEO title={ {zh: '比原侧链', en: 'Sidechain'} } />
@@ -343,17 +347,17 @@ const Detail = ({ intl }) => {
       <div className="node-list">
         <div className="node">
           <i className="circle green" />
-          <div className="num">{ bpNum || 0 }</div>
+          <div className="num">{ bpNum || '-' }</div>
           <div className="des"><Msg id="vapor_node_part1_title"/></div>
         </div>
         <div className="node">
           <i className="circle yellow" />
-          <div className="num">{ stanbyBpNum || 0 }</div>
+          <div className="num">{ stanbyBpNum || '-' }</div>
           <div className="des"><Msg id="vapor_node_part2_title"/></div>
         </div>
         <div className="node">
           <i className="circle gray" />
-          <div className="num">{ totalNode || 0 }</div>
+          <div className="num">{ totalNode || '-' }</div>
           <div className="des"><Msg id="vapor_node_part3_title"/></div>
         </div>
       </div>
@@ -367,8 +371,8 @@ const Detail = ({ intl }) => {
               <img className="img" src={ item.img } />
               <div>
                 <h3 className="title">{ item.title }</h3>
-                { item.link && <a className="link" href={ item.link } target="_blank">{ item.cont } >></a> }
-                { item.innerLink && <Link to={ item.innerLink } target="_blank">{ item.cont } >></Link> }
+                { item.link && <a className="link" href={ item.link } target="_blank">{ item.cont } &gt;&gt;</a> }
+                { item.innerLink && <Link className="link" to={ item.innerLink } target="_blank">{ item.cont } &gt;&gt;</Link> }
               </div>
             </div>
           )}
