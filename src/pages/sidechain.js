@@ -45,6 +45,7 @@ const BannerWrap = css.div`
       white-space: none;
     }
     .subtitle {
+      padding: 0 10px;
       font-size: 14px;
       line-height: 24px;
     }
@@ -137,19 +138,20 @@ const TitleWrap = css.div`
   }
 `
 const FooterWrap = css.div`
-  padding: 40px 0 100px;
+  padding: 40px 0;
   width: 100%;
   background: #fff;
 
   .list {
-    padding-left: 40px;
+    display: inline-block;
+    margin: o auto;
   }
   .item {
-    width: 33%;
     display: flex;
+    align-items: center;
     float: left;
     padding: 0 10px;
-    box-sizing: border-box;
+    width: 350px;
     text-align:left;
 
     ::after {
@@ -158,25 +160,24 @@ const FooterWrap = css.div`
       margin: auto 40px auto auto;
       width: 1px;
       height: 30px;
-      background:rgba(0, 0, 0, 0.24);
+      background: #fafafa;
     }
-    &:last-child::after {
-      display: none;
+    &:last-child {
+      width: auto;
+
+      &::after {
+        display: none;
+      }
     }
 
     .title {
       font-weight: bold;
-      font-size: 28px;
+      font-size: 18px;
       color: #000;
     }
     .link {
       color: #004EE4;
-    }
-    .divider {
-      margin: auto 40px auto auto;
-      width: 1px;
-      height: 30px;
-      background:rgba(0, 0, 0, 0.24);
+      font-size: 16px;
     }
     .img {
       width: 68px;
@@ -190,15 +191,13 @@ const FooterWrap = css.div`
   @media (max-width: 640px) {
     padding-bottom: 10px;
 
-    .list {
-      padding-left: 0;
-    }
     .item {
-      width: 100%;
+      width: 100% !important;
       padding: 20px 10px;
       border-bottom: 0.5px solid #eae8e8;
-      .divider{
-        display:none;
+
+      &:first-child {
+        border-top: 0.5px solid #eae8e8;
       }
     }
   }
@@ -208,8 +207,8 @@ const NodeWrap = css.div`
   background: #fff;
   text-align: center;
 
-  .des {
-    margin: 10px auto 20px;
+  .content {
+    margin: 10px auto;
     max-width: 710px;
     line-height: 1.8;
     font-size: 16px;
@@ -251,24 +250,36 @@ const NodeWrap = css.div`
     line-height: 1.2;
     color: rgba(0, 0, 0, 0.88);
   }
-  .map {
-    margin: 40px auto 0;
-    width: 1240px;
-  }
-
+  
   @media (max-width: 640px) {
     padding-top: 60px;
 
+    .content {
+      padding: 0 10px;
+    }
     .node-list {
       .node {
         display: block;
 
         & + .node {
+          margin-top: 10px;
           margin-left: 0;
         }
       }
     }
     
+  }
+`
+const Map = css.div`
+  margin: 0 auto 100px;
+  width: 1240px;
+
+  .img {
+    width: 100%;
+  }
+  @media (max-width: 640px) {
+    margin-bottom: 40px;
+    width: 100%;
   }
 `
 
@@ -344,7 +355,7 @@ const Detail = ({ intl }) => {
         <Msg id="vapor_node_title_1" />
         <Msg id="vapor_node_title_2" />
       </Title>
-      <div className="des">
+      <div className="content">
         <Msg id="vapor_node_des" />
       </div>
       <div className="node-list">
@@ -364,7 +375,6 @@ const Detail = ({ intl }) => {
           <div className="des"><Msg id="vapor_node_part3_title"/></div>
         </div>
       </div>
-      <img className="map" src={ map_bg } />
     </NodeWrap>
     <FooterWrap>
       <Cont>
@@ -382,6 +392,9 @@ const Detail = ({ intl }) => {
         </div>
       </Cont>
     </FooterWrap>
+    <Map>
+      <img className="img" src={ map_bg } />
+    </Map>
   </Layout>
 )};
 
