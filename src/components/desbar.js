@@ -20,6 +20,7 @@ const Item = css.li`
   float: left;
   padding: 30px 10px;
   box-sizing: border-box;
+  cursor: initial;
   @media (max-width: 640px) {
     width: 100%;
     padding: 20px 10px;
@@ -36,6 +37,7 @@ const Img = css.img`
 const Msg = css.span`
   display: block;
   padding-right: 20px;
+  cursor: initial;
   h1{
     font-size: 20px;
     font-weight: bold;
