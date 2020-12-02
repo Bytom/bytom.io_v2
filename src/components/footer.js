@@ -30,7 +30,7 @@ const links = [
       // {title: 'About', href: '/'},
       {title: <Msg id="nav_team" />, href: '/team',},
       {title: <Msg id="nav_eco" />, href: '/ecosystem'},
-      {title: <Msg id="nav_white_paper" />, href: 'https://bytom.io/Bytom-Technical-White-Paper-EN.pdf'},
+      {title: <Msg id="nav_white_paper" />, href: 'https://cdn.bytom.io/res/Bytom-Technical-White-Paper-EN.pdf'},
       {title: 'Bytom Logo', href: 'https://cdn.bytom.io/res/Logo_Bytom_v2.1.zip'},
     ]
   },
