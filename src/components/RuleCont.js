@@ -154,7 +154,7 @@ const ContentZh = () => (
       <ol>
         <li>
           <p>问题：正式共识节点和备选共识节点的收益是如何确定的？</p>
-          <span>答: 比原链基金第一年会提供1000万btm。10个正式共识节点一年一共会有超600万BTM的奖励，每个正式共识节点一年会有60万的btm奖励，正式共识节点第1-10个具有相同的出块概率，收益相同。备选的32个共识节点一年一共会有近400万btm奖励，备选共识节点按获得的投票比例分配备选节点奖励。</span>
+          <span>答: 比原链基金第一年会提供1000万btm。10个正式共识节点一年一共会有超600万BTM的奖励，每个正式共识节点一年会有60万的btm奖励，正式共识节点第1-10个具有相同的出块概率，收益相同。备选的32个共识节点一年一共会有近400万btm奖励，以备选节点的奖励总量/32 的公式进行平均分配。每年的预计收益约为：(10,000,000× 39.02%)/32 = 121,937.5 BTM</span>
         </li>
         <li>
           <p>问题：共识节点多长时间能拿到奖励？</p>
@@ -292,7 +292,7 @@ const ContentEn = () => (
       <ol>
         <li>
           <p>Q：What's the rewards of Block Producers and Standby Block Producers?</p>
-          <span>A: Bytom Foundation will donate 10million BTM in the first year. 10 Block Producers will be rewarded more than 6 million BTM in total and every Block Producer will be rewarded 600K BTM. The rewards of Block Producers are same. 32 Standby Block Producers will be rewarded about 4 million in total for one year and their rewards are determined by voting proportion.</span>
+          <span>A: Bytom Foundation will donate 10million BTM in the first year. 10 Block Producers will be rewarded more than 6 million BTM in total and every Block Producer will be rewarded 600K BTM. The rewards of Block Producers are same. 32 Standby Block Producers will be rewarded about 4 million in total for one year, it is distributed by the formula: the total reward of the candidate nodes/32 . The estimated annual revenue is about: (10000000 × 39.02%) / 32 = 121937.5 BTM</span>
         </li>
         <li>
           <p>Q:When can Block Producers get the reward?</p>
