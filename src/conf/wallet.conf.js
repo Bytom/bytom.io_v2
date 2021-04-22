@@ -128,7 +128,7 @@ export default {
     title: [<Msg id="wallet_list_file" />, <Msg id="wallet_list_height" />, <Msg id="wallet_list_size" />, <><Msg id="wallet_list_md5" />(MD5)</>, <Msg id="wallet_list_update" />, <Msg id="wallet_list_link" />],
     width: [280, 110, 150, 350, 260],
     data: [
-      ['20200921-Update.db.zip', '519460', '862MB', 'aef284cc9a6e9486affddc822d0bcfdf', '2020-09-21 18:00:00 (GMT+8)', <a target="_blank" href="https://sourceforge.net/projects/bytomblockchain/files/core.db/"><Msg id="wallet_list_btn_download" /></a>],
+      ['20210422-Update.db.zip', '641813', '970MB', 'aa5aff11826067e7fdfbadb26f616bc9', '2021-04-22 18:00:00 (GMT+8)', <a target="_blank" href="https://cdn.blockmeta.com/bytomblockchain/files/core.db/core.db.zip"><Msg id="wallet_list_btn_download" /></a>],
     ],
   },
 };
