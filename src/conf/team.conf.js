@@ -179,15 +179,7 @@ export default {
           {type: 'email', link: ''},
         ],
       },
-      {
-        name: <Msg id="team_member_wjc" />,
-        position: <Msg id="team_member_wjc_title" />,
-        img: img_wenjc,
-        contact: [
-          {type: 'linkin', link: 'https://www.linkedin.com/in/%E5%98%89%E6%88%90-%E7%BF%81-815918161/'},
-          {type: 'email', link: ''},
-        ],
-      },
+      {},
       {},
       {},
     ],
