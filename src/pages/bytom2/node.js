@@ -51,8 +51,12 @@ const Wrap = css.div`
       display: none;
     }
     &>ul:nth-child(10){
-      li:nth-child(2n){
+      padding: 0;
+      li{
         list-style: none;
+      }
+      li:nth-child(2n){
+        margin-bottom: 18px;
       }
     }
     h1{
@@ -72,15 +76,26 @@ const Wrap = css.div`
           width: 498px;
           border-radius: 6px;
           overflow: hidden;
+          margin: 20px 0 0 -18px;
+          border-collapse: collapse;
+          border-collapse: separate;
+          border-spacing: 0;
+          border-style: hidden;
           border: 1px solid #363636;
-          margin-top: 20px;
           td{
             background: rgba(28, 28, 28, 1);
-            border: 1px solid #363636;
+            border-right: 1px solid #363636;
+            border-bottom: 1px solid #363636;
             width: 50%;
             padding: 16px 20px;
             font-size: 16px;
             line-height: 1em;
+          }
+          td:last-child{
+            border-right: 0;
+          }
+          tr:last-child td{
+            border-bottom: 0;
           }
         }
       }
@@ -100,9 +115,9 @@ const Wrap = css.div`
   }
   @media (max-width: 640px) {
     padding: 0px 20px 360px 20px;
-    background: url(${img_bg_m_1}) right 320px / 100px no-repeat, 
-                url(${img_bg_m_2}) left 1300px / 50px no-repeat, 
-                url(${img_bg_m_3}) right 1980px / 50px no-repeat, 
+    background: url(${img_bg_m_1}) right 300px / 100px no-repeat, 
+                url(${img_bg_m_2}) left 1280px / 50px no-repeat, 
+                url(${img_bg_m_3}) right 1920px / 50px no-repeat, 
                 url(${img_bg_m}) center -60px / 100% no-repeat, 
                 url(${img_bg_m_footer}) bottom center / 100% no-repeat,
                 #000;
@@ -211,7 +226,6 @@ const NodeApply = () => {
                 {new Array(count).fill('0').map((item, index) => (
                   <li
                     key={index}
-                    style={{ marginTop: i === 2 && index === 5 || i === 3 && index === 4 ? '30px' : 0 }}
                   >
                     <Msg id={`btm2_node_des_${i + 1}_${index}`} />
                     { i === 2 && index === 5 && TableDevice}

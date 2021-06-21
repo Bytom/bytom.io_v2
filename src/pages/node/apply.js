@@ -12,13 +12,17 @@ import SEO from '../../components/seo';
 import PageTitle from '../../components/PageTitle';
 
 import img_upload from '../../images/upload.png';
-import img_bg from '../../images/bg.png';
 import img_bgm from '../../images/bgm.png';
+import img_bg from '../../images/bytom2/node/web/bg.png';
+
+const headerStyle = {
+  background: `url(${img_bg}) top center / 1920px no-repeat, #000`,
+};
 
 const Wrap = css.div`
   width: 100%;
   padding-bottom: 60px;
-  background: #000 url(${img_bg}) top center / 1920px no-repeat;
+  background: #000 url(${img_bg}) center -80px / 1920px no-repeat;
   @media (max-width: 640px) {
     background: #000 url(${img_bgm}) top center / 100% no-repeat;
   }
@@ -151,12 +155,17 @@ const Upload = css.div`
 `;
 const Button = css.button`
   cursor: pointer;
-  width: 174px;
-  height: 50px;
-  line-height: 50px;
-  background-color: #035BD4;
-  color: #fff;
   border: none;
+  height: 48px;
+  line-height: 48px;
+  background: linear-gradient(180deg, #3177FF 0%, #004EE4 100%);
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0 40px;
   opacity: ${props => props.loading ? 0.6 : 1}
 `;
 const options = [
@@ -387,7 +396,7 @@ class ApplyForm extends Component {
       },
     ];
     return (
-      <Layout>
+      <Layout headerStyle={headerStyle}>
         <SEO title="Bytom"  />
         <Wrap>
           <PageTitle
