@@ -113,6 +113,19 @@ const Wrap = css.div`
     display: inline-block;
     padding: 0 40px;
   }
+  @media (max-width: 1580px) {
+    background: url(${img_bg_2}) left 1300px / 180px no-repeat, 
+              url(${img_bg_1}) right 450px / 400px no-repeat, 
+              url(${img_bg}) center -80px / 1920px no-repeat, 
+              url(${img_bg_footer}) bottom center / 1920px no-repeat,
+              #000;
+  }
+  @media (max-width: 1500px) {
+    background: url(${img_bg_1}) right 450px / 400px no-repeat, 
+              url(${img_bg}) center -80px / 1920px no-repeat, 
+              url(${img_bg_footer}) bottom center / 1920px no-repeat,
+              #000;
+  }
   @media (max-width: 640px) {
     padding: 0px 20px 360px 20px;
     background: url(${img_bg_m_1}) right 300px / 100px no-repeat, 

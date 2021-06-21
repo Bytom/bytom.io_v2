@@ -70,7 +70,7 @@ export default {
       href: '/sidechain/',
     },
     {
-      name: "BTM 2.0",
+      name: "Bytom2.0",
       href: '/bytom2/node/',
     },
     {
