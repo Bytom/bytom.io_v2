@@ -18,9 +18,10 @@ import img_devcon from '../images/devcon/btn.png';
 const Wrap = css.div`
   width: 100%;
   height: 80px;
-  background-color: ${props => (props.light === 'true' ? props.disableSubnav ? '#f8f8f8' : '#fff' : '#000')};
+  background: ${props => (props.light === 'true' ? props.disableSubnav ? '#f8f8f8' : '#fff' : '#000')};
   @media (max-width: 640px) {
     height: 60px;
+    background: ${props => (props.light === 'true' ? props.disableSubnav ? '#f8f8f8' : '#fff' : '#000')} !important;
   }
 `;
 const Cont = css.div`
@@ -39,10 +40,7 @@ const Logo = css(Link)`
   display: inline-block;
   width: 130px;
   height: 100%;
-  background: url(${props =>
-    props.light === 'true'
-      ? img_logo_light
-      : img_logo}) center left / 130px no-repeat;
+  background: url(${props =>props.light === 'true' ? img_logo_light : img_logo}) center left / 130px no-repeat;
 `;
 
 const Nav = css.ul`
@@ -163,16 +161,13 @@ const MobileMenuToggle = css.span`
   height: 60px;
   vertical-align: top;
   margin-left: 15px;
-  background: url(${props =>
-    props.light === 'true'
-      ? img_m_menu_light
-      : img_m_menu}) center / 100% no-repeat;
+  background: url(${props => props.light === 'true' ? img_m_menu_light : img_m_menu}) center / 100% no-repeat;
   @media (min-width: 640px) {
     display: none;
   }
 `;
 
-const Header = ({ siteTitle, light, intl, disableSubnav }) => {
+const Header = ({ siteTitle, light, intl, disableSubnav, style }) => {
   const [menuStatus, toggleMobileMenu] = useState(false);
   const [langStatus, toggleLangStatus] = useState(false);
 
@@ -196,7 +191,7 @@ const Header = ({ siteTitle, light, intl, disableSubnav }) => {
   };
 
   return (
-    <Wrap light={light ? 'true' : 'false'} disableSubnav={disableSubnav}>
+    <Wrap style={style} light={light ? 'true' : 'false'} disableSubnav={disableSubnav}>
       <Cont disableSubnav={disableSubnav} className="clearfix">
         <Logo light={light ? 'true' : 'false'} to="/">
           {' '}

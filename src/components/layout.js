@@ -14,32 +14,13 @@ const Wrap = css.div`
   width: 100%;
 `;
 
-const Layout = ({ children, light = false, disableSubnav = false, intl }) => {
-  useEffect(() => {
-    console.log('object')
-    if(intl.locale === 'zh') {
-      try{
-        const isGray = isSameDay(new Date(), new Date('2020-04-04'));
-        if(isGray) {
-          window.document.body.style.filter = 'grayscale(100%)';
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    } else {
-      try{
-        window.document.body.style.filter = 'grayscale(0)';
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  }, [intl.locale])
+const Layout = ({ children, light = false, headerStyle, disableSubnav = false, intl }) => {
   return (
     <IntlContextConsumer>
       {
         () => (
           <>
-            <Header light={light} disableSubnav={disableSubnav} />
+            <Header style={headerStyle} light={light} disableSubnav={disableSubnav} />
             <Wrap style={{background: light && disableSubnav ? '#f8f8f8' : 'transparent'}}>
               {children}
             </Wrap>
