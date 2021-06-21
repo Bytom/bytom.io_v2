@@ -27,7 +27,7 @@ export default {
     },
     {
       name: "MOV",
-      href: 'https://www.bymov.io/'
+      href: 'https://mov.network/'
     },
     {
       name: <Msg id="nav_wallet" />,
@@ -68,6 +68,10 @@ export default {
     {
       name: <Msg id="nav_sidechain"/>,
       href: '/sidechain/',
+    },
+    {
+      name: "BTM 2.0",
+      href: '/bytom2/node/',
     },
     {
       name: <Msg id="nav_blog" />,
