@@ -513,6 +513,6 @@
   "btm2_node_des_5_5": "Ranking will be updated once per round (about 100 blocks)",
   "btm2_node_des_5_6": "Q4.  How much is the dividend reward for voters?",
   "btm2_node_des_5_7": "The dividend rewards for voters are set by the Block Producers.",
-  "btm2_node_des_5_8": "Q5. Can I withdrawal my vote after I get enough votes?",
-  "btm2_node_des_5_9": "No, PoS requires users to pay deposits due to non-profit attacks and other reasons. If malicious behavior occurs, the deposit will be fined to make the perpetrator pay a certain price."
+  "btm2_node_des_5_8": "Q5. Can I withdrawal my vote after the votes are enough?",
+  "btm2_node_des_5_9": "No, PoS requires Block Producers to pay votes as deposits in case of doing evil."
 }
