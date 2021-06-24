@@ -475,7 +475,7 @@
   "btm2_node_des_1_6": "In order to prevent harmless attacks, Bytom2.0 will punish Block Producers that sign two blocks at the same height at the same time, and confiscate part of their staked BTM. Considering the complexity of the staked BTM, Bytom2.0 will introduce the mechanism gradually after the consensus gets stabilized.",
 
   "btm2_node_subtitle_2": "Bytom 2.0 Block Producer recruitment guidance",
-  "btm2_node_des_2_0": "Block Producer recruitment will be launched on, June 21, 2021, which will be open for long-term;",
+  "btm2_node_des_2_0": "Block Producer recruitment will be launched on, June 24, 2021, which will be open for long-term;",
   "btm2_node_des_2_1": "Candidates who meet the requirements can submit their applications immediately ( conditions can be viewed below);",
   "btm2_node_des_2_2": "Filtering during the registration process;",
   "btm2_node_des_2_3": "After the candidate passes the audit, the website will publish the candidate information and real-time staking balance as well as the dynamic results of the candidate ranking. ",
