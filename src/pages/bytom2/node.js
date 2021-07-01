@@ -13,6 +13,11 @@ import img_bg_m_1 from '../../images/bytom2/node/m/01.png';
 import img_bg_m_2 from '../../images/bytom2/node/m/02.png';
 import img_bg_m_3 from '../../images/bytom2/node/m/03.png';
 
+import icon_mac from '../../images/bytom2/node/icon/mac.png';
+import icon_windows from '../../images/bytom2/node/icon/windows.png';
+import icon_linux from '../../images/bytom2/node/icon/linux.png';
+import icon_code from '../../images/bytom2/node/icon/code.png';
+
 const headerStyle = {
   background: `url(${img_bg}) top center / 1920px no-repeat, #000`,
 };
@@ -72,6 +77,31 @@ const Wrap = css.div`
         font-size: 16px;
         line-height: 24px;
         list-style: disc;
+        table.table-dashboard{
+          width: 774px;
+          tr{
+            td:first-child{
+              width: 55%;
+              border-right: 0;
+            }
+            td:last-child{
+              text-align: right;
+            }
+          }
+          td{
+            img{
+              width: 32px;
+              margin-right: 16px;
+            }
+            a{
+              width: 120px;
+              padding: 0;
+            }
+            a + a{
+              margin-left: 20px;
+            }
+          }
+        }
         table{
           width: 498px;
           border-radius: 6px;
@@ -159,8 +189,19 @@ const Wrap = css.div`
         padding: 0 0 0 18px;
         li{
           list-style: disc;
-          table{
+          table, table.table-dashboard{
             width: 100%;
+          }
+          table.table-dashboard{
+            margin: 0;
+            tr{
+              display: flex;
+              flex-direction: column;
+            }
+            td{
+              width: 100% !important;
+              text-align: left !important;
+            }
           }
         }
       }
@@ -171,7 +212,9 @@ const Wrap = css.div`
 const TableDevice = (
   <table>
     <tr>
-      <td><Msg id="btm2_node_des_3_5_0" /></td>
+      <td>
+        <Msg id="btm2_node_des_3_5_0" />
+      </td>
       <td>CentOS 7 / Ubuntu 18.04</td>
     </tr>
     <tr>
@@ -179,15 +222,21 @@ const TableDevice = (
       <td>8 Core</td>
     </tr>
     <tr>
-      <td><Msg id="btm2_node_des_3_5_1" /></td>
+      <td>
+        <Msg id="btm2_node_des_3_5_1" />
+      </td>
       <td>32 G</td>
     </tr>
     <tr>
-      <td><Msg id="btm2_node_des_3_5_2" /></td>
+      <td>
+        <Msg id="btm2_node_des_3_5_2" />
+      </td>
       <td>3TB SSD</td>
     </tr>
     <tr>
-      <td><Msg id="btm2_node_des_3_5_3" /></td>
+      <td>
+        <Msg id="btm2_node_des_3_5_3" />
+      </td>
       <td>50 Mbps</td>
     </tr>
   </table>
@@ -196,20 +245,96 @@ const TableDevice = (
 const TableReward = (
   <table>
     <tr>
-      <td><Msg id="btm2_node_des_4_4_0" /></td>
-      <td><Msg id="btm2_node_des_4_4_1" /></td>
+      <td>
+        <Msg id="btm2_node_des_4_4_0" />
+      </td>
+      <td>
+        <Msg id="btm2_node_des_4_4_1" />
+      </td>
     </tr>
     <tr>
-      <td><Msg id="btm2_node_des_4_4_2" /></td>
+      <td>
+        <Msg id="btm2_node_des_4_4_2" />
+      </td>
       <td>5.7 BTM</td>
     </tr>
     <tr>
-      <td><Msg id="btm2_node_des_4_4_3" /></td>
+      <td>
+        <Msg id="btm2_node_des_4_4_3" />
+      </td>
       <td>82,191.78 BTM</td>
     </tr>
     <tr>
-      <td><Msg id="btm2_node_des_4_4_4" /></td>
+      <td>
+        <Msg id="btm2_node_des_4_4_4" />
+      </td>
       <td>30,000,000 BTM</td>
+    </tr>
+  </table>
+);
+
+const TableDashboard = (
+  <table className="table-dashboard">
+    <tr>
+      <td>
+        <img src={icon_mac} alt="" />
+        <span>Bytom2.0 Dashboard for macOS V 2.0.0</span>
+      </td>
+      <td>
+        <p className="bth-group">
+          <a target="_blank" href="">
+            <Msg id="wallet_list_btn_download" />
+          </a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src={icon_windows} alt="" />
+        <span>Bytom2.0 Dashboard for Windows V 2.0.0</span>
+      </td>
+      <td>
+        <p className="bth-group">
+          <a target="_blank" href="">
+            Win32
+          </a>
+          <a target="_blank" href="">
+            Win64
+          </a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src={icon_linux} alt="" />
+        <span>Bytom2.0 Dashboard for Linux V 2.0.0</span>
+      </td>
+      <td>
+        <p className="bth-group">
+          <a target="_blank" href="">
+            Linux32
+          </a>
+          <a target="_blank" href="">
+            Linux64
+          </a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src={icon_code} alt="" />
+        <span>Source Code</span>
+      </td>
+      <td>
+        <p className="bth-group">
+          <a target="_blank" href="">
+            zip
+          </a>
+          <a target="_blank" href="">
+            tar.gz
+          </a>
+        </p>
+      </td>
     </tr>
   </table>
 );
@@ -232,17 +357,23 @@ const NodeApply = () => {
         <div className="cont">
           {[0, 4, 6, 5, 10].map((count, i) => (
             <React.Fragment key={i}>
+              {i === 4 && (
+                <React.Fragment key={55}>
+                  <h1>Bytom2.0 Dashboard</h1>
+                  <ul>
+                    <li>{TableDashboard}</li>
+                  </ul>
+                </React.Fragment>
+              )}
               <h1>
                 <Msg id={`btm2_node_subtitle_${i + 1}`} />
               </h1>
               <ul>
                 {new Array(count).fill('0').map((item, index) => (
-                  <li
-                    key={index}
-                  >
+                  <li key={index}>
                     <Msg id={`btm2_node_des_${i + 1}_${index}`} />
-                    { i === 2 && index === 5 && TableDevice}
-                    { i === 3 && index === 4 && TableReward}
+                    {i === 2 && index === 5 && TableDevice}
+                    {i === 3 && index === 4 && TableReward}
                   </li>
                 ))}
               </ul>

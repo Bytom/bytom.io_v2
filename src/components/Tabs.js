@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import css from 'styled-components';
 
 const Wrap = css.div`
-  width: 1280px;;
+  width: 1280px;
   margin: 0 auto;
   @media (max-width: 640px) {
     width: 100%;
@@ -11,8 +11,12 @@ const Wrap = css.div`
   }
 `;
 const Cont = css.div`
+  width: 1280px;
   margin: 0 auto;
   background-color: #f8f8f8;
+  @media (max-width: 640px) {
+    width: 100%;
+  }
 `;
 const Head = css.ul`
   width: 100%;

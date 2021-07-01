@@ -514,5 +514,7 @@
   "btm2_node_des_5_6": "Q4.  How much is the dividend reward for voters?",
   "btm2_node_des_5_7": "The dividend rewards for voters are set by the Block Producers.",
   "btm2_node_des_5_8": "Q5. Can I withdrawal my vote after the votes are enough?",
-  "btm2_node_des_5_9": "No, PoS requires Block Producers to pay votes as deposits in case of doing evil."
+  "btm2_node_des_5_9": "No, PoS requires Block Producers to pay votes as deposits in case of doing evil.",
+
+  "btm2_dashboard": "Bytom2.0 Dashboard"
 }
