@@ -282,7 +282,10 @@ const TableDashboard = (
       </td>
       <td>
         <p className="bth-group">
-          <a target="_blank" href="">
+          <a
+            target="_blank"
+            href="https://cdn.bytom.io/wallet/bytom-wallet-desktop-2.0.0-mac.zip"
+          >
             <Msg id="wallet_list_btn_download" />
           </a>
         </p>
@@ -295,11 +298,14 @@ const TableDashboard = (
       </td>
       <td>
         <p className="bth-group">
-          <a target="_blank" href="">
+          {/* <a target="_blank" href="">
             Win32
-          </a>
-          <a target="_blank" href="">
-            Win64
+          </a> */}
+          <a
+            target="_blank"
+            href="https://cdn.bytom.io/wallet/bytom-wallet-desktop-2.0.0-win-x64.zip"
+          >
+            <Msg id="wallet_list_btn_download" />
           </a>
         </p>
       </td>
@@ -311,11 +317,14 @@ const TableDashboard = (
       </td>
       <td>
         <p className="bth-group">
-          <a target="_blank" href="">
+          {/* <a target="_blank" href="">
             Linux32
-          </a>
-          <a target="_blank" href="">
-            Linux64
+          </a> */}
+          <a
+            target="_blank"
+            href="https://cdn.bytom.io/wallet/bytom-wallet-desktop-2.0.0-linux-x64.zip"
+          >
+            <Msg id="wallet_list_btn_download" />
           </a>
         </p>
       </td>
@@ -327,10 +336,10 @@ const TableDashboard = (
       </td>
       <td>
         <p className="bth-group">
-          <a target="_blank" href="">
+          <a target="_blank" href="https://github.com/Bytom/bytom/archive/v2.0.3.zip">
             zip
           </a>
-          <a target="_blank" href="">
+          <a target="_blank" href="https://github.com/Bytom/bytom/archive/v2.0.3.tar.gz">
             tar.gz
           </a>
         </p>
