@@ -214,7 +214,7 @@ const Footer = ({ siteTitle, disableSubnav }) => {
           </Item>
         </Cont>
       </Wrap>}
-      <Copy>Copyright ©2020 bytom.io</Copy>
+      <Copy>Copyright ©2021 bytom.io</Copy>
     </>
   )
 };
