@@ -56,7 +56,7 @@ export default {
       children: [
         {
           name: <Msg id="nav_exp_bytom" />,
-          href: 'https://blockmeta.com',
+          href: 'https://classic.blockmeta.com/',
         },
         {
           name: <Msg id="nav_exp_vapor" />,
